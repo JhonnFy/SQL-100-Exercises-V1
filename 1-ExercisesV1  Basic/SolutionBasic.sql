@@ -1,0 +1,35 @@
+---------------------------------
+--Ejercicios SQL Básicos (1–20)
+---------------------------------
+
+---------------------------------
+--Relaciones
+---------------------------------
+--1-Crear la relación FK entre EMPLEADO y UBICACION.
+--2-Crear la relación FK entre TAREAS y EMPLEADO.
+--3-Crear la relación FK entre TAREAS y PROYECTO.
+
+---------------------------------
+--Inserciones básicas (20 registros por tabla)
+---------------------------------
+--4-Insertar 20 registros en la tabla UBICACION, con diferentes nombres y ubicaciones (por ejemplo, ciudades o sucursales).
+--5-Insertar 20 registros en la tabla EMPLEADO, incluyendo nombre, apellido, email, salario (varios rangos), fecha de contratación y un FK válido a la tabla UBICACION.
+--6-Insertar 20 registros en la tabla PROYECTO, con diferentes nombres, fechas de inicio y fin (fechas válidas y coherentes), y presupuestos variados.
+--7-Insertar 20 registros en la tabla TAREAS, cada una con descripción, estado (por ejemplo: 'Pendiente', 'En Progreso', 'Completada'), fechas de inicio y fin, y claves foráneas que referencien empleados y proyectos existentes.
+
+---------------------------------
+--Consultas básicas
+---------------------------------
+--8-Mostrar todos los empleados.
+--9-Listar nombres y apellidos de empleados con salario mayor a 3000.
+--10-Mostrar todos los registros de la tabla UBICACION.
+--11-Mostrar proyectos con sus presupuestos ordenados de mayor a menor.
+--12-Mostrar todas las tareas que estén en estado “Pendiente”.
+--13-Listar tareas asignadas al empleado con Id_Empleado = 1.
+--14-Mostrar empleados ordenados por salario de forma descendente.
+--15-Obtener la cantidad total de tareas registradas.
+--16-Mostrar nombre completo (nombre + apellido) y fecha de contratación de todos los empleados.
+--17-Listar proyectos que iniciaron después del 1 de enero de 2023.
+--18-Mostrar empleados cuyo salario esté entre 2000 y 4000.
+--19-Mostrar tareas que comienzan en una fecha específica dada.
+--20-Mostrar los empleados junto con el nombre de su ubicación (JOIN entre EMPLEADO y UBICACION).
