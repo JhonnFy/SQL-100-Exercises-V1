@@ -1,0 +1,41 @@
+🧪 Ejercicios SQL Avanzados (61–100)
+61-Crear una consulta que utilice CTE para mostrar empleados con más de 3 tareas asignadas.
+62-Escribir una consulta que muestre el ranking de empleados basado en la suma total del presupuesto de los proyectos en los que trabajan.
+63-Implementar un trigger que registre en una tabla de auditoría cada vez que se inserte una nueva tarea.
+64-Crear una vista que muestre empleados, su ubicación y la cantidad de tareas pendientes.
+65-Escribir una consulta para detectar tareas que se solapan para un mismo empleado (fechas cruzadas).
+66-Crear una función definida por el usuario que calcule la duración en días entre dos fechas.
+67-Usar un procedimiento almacenado para actualizar el estado de una tarea y registrar la fecha de modificación.
+68-Realizar una consulta que use window functions para mostrar el salario acumulado de los empleados ordenado por fecha de contratación.
+69-Crear un índice para optimizar consultas frecuentes que filtran tareas por estado y fecha de inicio.
+70-Escribir una consulta que muestre proyectos y la desviación estándar de la duración de sus tareas.
+71-Implementar una transacción que asigne varias tareas a un empleado y asegure que todas se asignen correctamente o ninguna.
+72-Crear un procedimiento almacenado que devuelva los proyectos que estén en riesgo por retrasos en las tareas.
+73-Usar subconsultas correlacionadas para listar empleados que tengan tareas con duración superior al promedio.
+74-Crear una consulta que utilice PIVOT para mostrar la cantidad de tareas por estado para cada proyecto.
+75-Implementar un trigger que impida la eliminación de un proyecto si tiene tareas asociadas.
+76-Crear un script para copiar todos los empleados de una ubicación específica a otra (duplicado con nuevos IDs).
+77-Escribir una consulta que combine datos históricos de empleados y tareas usando UNION con datos actuales.
+78-Crear una función escalar que determine si una tarea está “atrasada” comparando fecha fin con la fecha actual.
+79-Usar CTE recursivos para listar jerarquías de tareas si se modelaran subtareas (expande el modelo).
+80-Implementar una consulta para detectar empleados que han cambiado de ubicación más de una vez (requiere tabla adicional).
+81-Crear un procedimiento que genere un reporte mensual de actividades por proyecto y estado de tareas.
+82-Usar MERGE para sincronizar datos entre dos tablas similares (por ejemplo, tareas temporales y permanentes).
+83-Escribir una consulta para mostrar el porcentaje de tareas completadas por cada empleado.
+84-Crear una vista materializada (indexed view) para acelerar consultas frecuentes de resumen de tareas.
+85-Implementar un trigger que actualice automáticamente el estado del proyecto según el estado de sus tareas.
+86-Crear un script para limpiar tareas duplicadas basadas en descripción y fechas.
+87-Escribir una consulta para detectar y listar proyectos con presupuesto sobreasignado (suma tareas > presupuesto).
+88-Implementar una función para calcular la antigüedad del empleado en años, meses y días.
+89-Crear un procedimiento almacenado que permita reasignar tareas de un empleado a otro.
+90-Usar funciones analíticas para mostrar la diferencia en días entre tareas consecutivas por empleado.
+91-Crear una consulta para listar tareas cuya duración exceda la duración promedio por proyecto.
+92-Implementar un procedimiento que archive proyectos y tareas completadas en una tabla histórica.
+93-Escribir un script para validar y corregir emails inválidos en la tabla EMPLEADO.
+94-Crear una función para calcular el avance porcentual total de un proyecto basado en sus tareas.
+95-Usar CTE para listar proyectos sin tareas asignadas.
+96-Implementar un procedimiento para eliminar empleados y reasignar sus tareas automáticamente.
+97-Escribir una consulta para mostrar los 5 empleados con más tareas completadas.
+98-Crear un índice compuesto para optimizar búsquedas por estado y fecha inicio en tareas.
+99-Implementar un trigger que envíe una alerta (por ejemplo, inserte un registro en tabla de logs) cuando una tarea cambie de estado a “Completada”.
+100-Crear una consulta que combine datos de varias tablas y muestre un resumen completo de proyectos, empleados y tareas con filtros avanzados.
