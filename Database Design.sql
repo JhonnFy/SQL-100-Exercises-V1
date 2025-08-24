@@ -19,7 +19,7 @@ USE AdminDeveloper
 --	Email VARCHAR(100) NOT NULL,
 --	Salario DECIMAL(10,1) NOT NULL,
 --	Fecha_Contratacion DATE NOT NULL,
---	FK_UbicacionId INT 
+--	FK_UbicacionId INT, 
 --	PRIMARY KEY (Id_Empleado)
 --)
 
@@ -30,8 +30,21 @@ USE AdminDeveloper
 --	Nombre VARCHAR(100) NOT NULL,
 --	Fecha_Inicio DATE NOT NULL,
 --	Fecha_Fin DATE NOT NULL,
---	Presupuesto DECIMAL(10,1),
+--	Presupuesto DECIMAL(10,1) NOT NULL,
 --	PRIMARY KEY (Id_Proyecto)
 --)
+
+--Tareas,Id,Descripcion,Estado,FK_Id_Empleado,FK_Id_Proyecto,Fecha_Inicio,Fecha_Fin
+--CREATE TABLE TAREAS(
+--	Id_Tarea INT IDENTITY(1,1),
+--	Descripcion VARCHAR(100) NOT NULL,
+--	Estado VARCHAR(100) NOT NULL,
+--	FK_EmpleadoId INT NOT NULL,
+--	FK_ProyectoId INT NOT NULL, 
+--	Fecha_Inicio DATE NOT NULL,
+--	Fecha_Fin DATE NOT NULL,
+--	PRIMARY KEY (Id_Tarea)
+--)
+
 
 
