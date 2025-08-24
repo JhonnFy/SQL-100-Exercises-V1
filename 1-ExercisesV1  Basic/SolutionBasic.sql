@@ -11,14 +11,20 @@
 	--FOREIGN KEY (FK_UbicacionId)
 	--REFERENCES UBICACION(Id_Ubicacion)
 	--]
-
+	 
 --2-Crear la relación FK entre TAREAS y EMPLEADO.
 	--[ALTER TABLE TAREAS
 	--ADD CONSTRAINT Punto2_FkTareas_Empleados
 	--FOREIGN KEY (FK_EmpleadoId)
 	--REFERENCES EMPLEADO(Id_Empleado)
 	--]
+	 
 --3-Crear la relación FK entre TAREAS y PROYECTO.
+	--[ALTER TABLE TAREAS
+	--ADD CONSTRAINT Punto3_FkTareas_Proyectos
+	--FOREIGN KEY (FK_ProyectoId)
+	--REFERENCES PROYECTO(Id_Proyecto)
+	--]
 
 ---------------------------------
 --Inserciones básicas (20 registros por tabla)

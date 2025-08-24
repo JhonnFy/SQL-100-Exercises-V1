@@ -35,7 +35,6 @@ USE AdminDeveloper
 --	PRIMARY KEY (Id_Tarea)
 --)
 
-
 --PROYECTO,Id_Proyecto,Nombre,Fecha_Inicio,Fecha_Fin,Presupuesto
 --CREATE TABLE PROYECTO(
 --	Id_Proyecto INT IDENTITY(1,1),
@@ -45,7 +44,7 @@ USE AdminDeveloper
 --	Presupuesto DECIMAL(10,1) NOT NULL,
 --	PRIMARY KEY (Id_Proyecto)
 --)
-
+    
 
 ---------------------------------
 --Relaciones
@@ -59,3 +58,8 @@ USE AdminDeveloper
 --ADD CONSTRAINT Punto2_FkTareas_Empleados
 --FOREIGN KEY (FK_EmpleadoId)
 --REFERENCES EMPLEADO(Id_Empleado)
+
+--ALTER TABLE TAREAS
+--ADD CONSTRAINT Punto3_FkTareas_Proyectos
+--FOREIGN KEY (FK_ProyectoId)
+--REFERENCES PROYECTO(Id_Proyecto)
