@@ -176,8 +176,10 @@
 --[10]-Mostrar todos los registros de la tabla UBICACION.
 	--SELECT a.Id_Ubicacion, a.Nombre, a.Ubicacion FROM UBICACION a
 ------------------------------------------------------------------------------------------------------------------------------------
-
---11-Mostrar proyectos con sus presupuestos ordenados de mayor a menor.
+--[11]-Mostrar proyectos con sus presupuestos ordenados de mayor a menor.
+	--SELECT a.Id_Proyecto, a.Nombre, a.Fecha_Inicio, a.Fecha_Fin, a.Presupuesto FROM PROYECTO a
+	--ORDER BY Presupuesto DESC
+------------------------------------------------------------------------------------------------------------------------------------
 --12-Mostrar todas las tareas que estén en estado “Pendiente”.
 --13-Listar tareas asignadas al empleado con Id_Empleado = 1.
 --14-Mostrar empleados ordenados por salario de forma descendente.
