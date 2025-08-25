@@ -1,25 +1,26 @@
 ---------------------------------
---Ejercicios SQL Básicos (1–20)
+--Ejercicios SQL Básicos (1–20) 
+USE AdminDeveloper
 ---------------------------------
 
 ---------------------------------
 --Relaciones
 ---------------------------------
---1-Crear la relación FK entre EMPLEADO y UBICACION
+--[1]-Crear la relación FK entre EMPLEADO y UBICACION
 	--[ALTER TABLE EMPLEADO
 	--ADD CONSTRAINT Punto1_FkEmpleado_Ubicacion
 	--FOREIGN KEY (FK_UbicacionId)
 	--REFERENCES UBICACION(Id_Ubicacion)
 	--]
 	 
---2-Crear la relación FK entre TAREAS y EMPLEADO.
+--[2]-Crear la relación FK entre TAREAS y EMPLEADO.
 	--[ALTER TABLE TAREAS
 	--ADD CONSTRAINT Punto2_FkTareas_Empleados
 	--FOREIGN KEY (FK_EmpleadoId)
 	--REFERENCES EMPLEADO(Id_Empleado)
 	--]
 	 
---3-Crear la relación FK entre TAREAS y PROYECTO.
+--[3]-Crear la relación FK entre TAREAS y PROYECTO.
 	--[ALTER TABLE TAREAS
 	--ADD CONSTRAINT Punto3_FkTareas_Proyectos
 	--FOREIGN KEY (FK_ProyectoId)
@@ -29,8 +30,42 @@
 ---------------------------------
 --Inserciones básicas (20 registros por tabla)
 ---------------------------------
---4-Insertar 20 registros en la tabla UBICACION, con diferentes nombres y ubicaciones (por ejemplo, ciudades o sucursales).
---5-Insertar 20 registros en la tabla EMPLEADO, incluyendo nombre, apellido, email, salario (varios rangos), fecha de contratación y un FK válido a la tabla UBICACION.
+--[4]-Insertar 20 registros en la tabla UBICACION, con diferentes nombres y ubicaciones (por ejemplo, ciudades o sucursales).
+---------------------------------
+--Bogota
+---------------------------------
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Chapinero','Bogota')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Usaquen','Bogota')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Teusaquillo','Bogota')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora La Candelaria', 'Bogota')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Suba','Bogota')
+---------------------------------
+--Medellin
+---------------------------------
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Poblado','Medellin')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Laureles','Medellin')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Envigado','Medellin')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Belen','Medellin')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Castilla','Medellin')
+---------------------------------
+--Cali
+---------------------------------
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora San Antonio','Cali')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Granada','Cali')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Nacional','Cali')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Pampalinda','Cali')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Ciudad Jardin','Cali')
+---------------------------------
+--Barranquilla
+---------------------------------
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Alto Prado','Barranquilla')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Villa Santos','Barranquilla')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Ciudad Jardin','Barranquilla')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora El Prado','Barranquilla')
+--INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Riomar','Barranquilla')
+
+--[5]-Insertar 20 registros en la tabla EMPLEADO, incluyendo nombre, apellido, email, salario (varios rangos), fecha de contratación y un FK válido a la tabla UBICACION.
+
 --6-Insertar 20 registros en la tabla PROYECTO, con diferentes nombres, fechas de inicio y fin (fechas válidas y coherentes), y presupuestos variados.
 --7-Insertar 20 registros en la tabla TAREAS, cada una con descripción, estado (por ejemplo: 'Pendiente', 'En Progreso', 'Completada'), fechas de inicio y fin, y claves foráneas que referencien empleados y proyectos existentes.
 
