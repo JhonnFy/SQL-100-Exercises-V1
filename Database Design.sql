@@ -1,6 +1,5 @@
 
-USE AdminDeveloper
-
+--USE AdminDeveloper
 
 --Id, Nombre, Ubicacion
 --CREATE TABLE UBICACION(
@@ -9,7 +8,6 @@ USE AdminDeveloper
 --	Ubicacion VARCHAR(100) NOT NULL,
 --	PRIMARY KEY(Id_Ubicacion)
 --)
-
 
 --EMPLEADO,Id_Empleado,Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UnicacionId
 --CREATE TABLE EMPLEADO(
@@ -45,9 +43,8 @@ USE AdminDeveloper
 --	PRIMARY KEY (Id_Proyecto)
 --)
     
-
 ---------------------------------
---Relaciones
+--CONSTRAINT
 ---------------------------------
 --ALTER TABLE EMPLEADO
 --ADD CONSTRAINT Punto1_FkEmpleado_Ubicacion
@@ -63,3 +60,10 @@ USE AdminDeveloper
 --ADD CONSTRAINT Punto3_FkTareas_Proyectos
 --FOREIGN KEY (FK_ProyectoId)
 --REFERENCES PROYECTO(Id_Proyecto)
+
+---------------------------------
+--ALTER
+---------------------------------
+--ALTER TABLE TAREAS
+--ADD Ciudad_Proyecto VARCHAR(100)
+ 

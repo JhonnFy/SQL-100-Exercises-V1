@@ -121,35 +121,52 @@
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Pampalinda Cali','2025-01-01','2025-12-04',4000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Ciudad Jardin Cali','2025-01-01','2025-12-05',5000000)
 ---------------------------------
---Barranquilla
+--Proyectos Barranquilla
 ---------------------------------
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Alto prado Barranquilla','2018-01-5','2025-12-01',50000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Villa Santos Barranquilla','2018-02-10','2025-12-02',40000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Ciudad Jardin Barranquilla','2018-03-15','2025-12-03',30000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil El Prado Barranquilla','2018-04-20','2025-12-04',20000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Riomar Barranquilla','2018-05-25','2025-12-05',10000000)
+------------------------------------------------------------------------------------------------------------------------------------
+--[7]-Insertar 20 registros en la tabla TAREAS, cada una con descripción, estado (por ejemplo: 'Pendiente', 'En Progreso', 'Completada'), fechas de inicio y fin, y claves foráneas que referencien empleados y proyectos existentes.
+------------------------------------------------------------------------------------------------------------------------------------
+--Tareas Bogota
+---------------------------------
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Chapinero','Pendiente',1,1,'2020-01-01','2030-01-01','Bogota')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Usaquen','Pendiente',2,2,'2025-01-01','2030-01-01','Bogota')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Teusaquillo','En Progreso',3,3,'2024-01-01','2030-01-01','Bogota')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil La Candelaria','En Progreso',4,4,'2023-01-01','2030-01-01','Bogota')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Suba','En Progreso',5,5,'2022-01-01','2030-01-01','Bogota')
+---------------------------------
+--Tareas Medellin
+---------------------------------
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Poblado','Pendiente',6,6,'2010-01-01','2050-01-01','Medellin')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Laureles','Pendiente',7,7,'2009-01-01','2050-01-01','Medellin')
+--INSERT INTO TAREAS (Descripcion,Estado,Fk_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Envigado','En Progreso',8,8,'2008-01-01','2050-01-01','Medellin')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Belen','En Progreso',9,9,'2007-01-01','2050-01-01','Medellin')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Castilla','En Progreso',10,10,'2006-01-01','2050-01-01','Medellin')
+---------------------------------
+--Tareas Cali
+---------------------------------
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil SanAntonio','Pendiente',11,11,'2025-01-01','2025-12-01','Cali')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Granada','Pendiente',12,12,'2025-01-01','2025-12-02','Cali')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Nacional','En Progreso',13,13,'2025-01-01','2025-12-03','Cali')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Pampalinda','En Progreso',14,14,'2025-01-01','2025-12-01','Cali')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Ciudad Jardin','En Progreso',15,15,'2025-01-01','2025-12-05','Cali')
+---------------------------------
+--Tareas Barranquilla
+---------------------------------
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Alto prado','Terminada',16,16,'2018-01-05','2025-12-01','Barranquilla')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Villa Santos','Terminada',17,17,'2018-02-10','2025-12-02','Barranquilla')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Ciudad Jardin','Terminada',18,18,'2018-03-15','2025-12-03','Barranquilla')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil El Prado','Terminada',19,19,'2018-04-20','2025-12-04','Barranquilla')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Riomar','Terminada',20,20,'2018-05-25','2025-12-05','Barranquilla')
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---6-Insertar 20 registros en la tabla PROYECTO, con diferentes nombres, fechas de inicio y fin (fechas válidas y coherentes), y presupuestos variados.
---7-Insertar 20 registros en la tabla TAREAS, cada una con descripción, estado (por ejemplo: 'Pendiente', 'En Progreso', 'Completada'), fechas de inicio y fin, y claves foráneas que referencien empleados y proyectos existentes.
+  
 
 ---------------------------------
 --Consultas básicas
