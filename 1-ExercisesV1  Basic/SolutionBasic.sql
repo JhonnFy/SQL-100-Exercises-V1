@@ -180,7 +180,10 @@
 	--SELECT a.Id_Proyecto, a.Nombre, a.Fecha_Inicio, a.Fecha_Fin, a.Presupuesto FROM PROYECTO a
 	--ORDER BY Presupuesto DESC
 ------------------------------------------------------------------------------------------------------------------------------------
---12-Mostrar todas las tareas que estén en estado “Pendiente”.
+--[12]-Mostrar todas las tareas que estén en estado “Pendiente”.
+	--SELECT * FROM TAREAS a
+	--WHERE a.Estado = 'Pendiente'
+------------------------------------------------------------------------------------------------------------------------------------
 --13-Listar tareas asignadas al empleado con Id_Empleado = 1.
 --14-Mostrar empleados ordenados por salario de forma descendente.
 --15-Obtener la cantidad total de tareas registradas.
