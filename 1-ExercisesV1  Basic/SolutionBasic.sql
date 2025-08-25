@@ -195,8 +195,11 @@
 --[15]-Obtener la cantidad total de tareas registradas.
 	--SELECT COUNT(*) AS TotalTareasRegistradas FROM TAREAS a
 ------------------------------------------------------------------------------------------------------------------------------------
+--[16]-Mostrar nombre completo (nombre + apellido) y fecha de contratación de todos los empleados.
+	--SELECT a.Nombre, a.Apellido, a.Fecha_Contratacion FROM EMPLEADO a
+------------------------------------------------------------------------------------------------------------------------------------
 
---16-Mostrar nombre completo (nombre + apellido) y fecha de contratación de todos los empleados.
+
 --17-Listar proyectos que iniciaron después del 1 de enero de 2023.
 --18-Mostrar empleados cuyo salario esté entre 2000 y 4000.
 --19-Mostrar tareas que comienzan en una fecha específica dada.
