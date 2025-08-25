@@ -94,6 +94,53 @@
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Ricardo','Silva','rsilva@distribuidora.com',3300000,'2010-03-01',4)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Gabriela','Ortiz','gortiz@distribuidora.com',4400000,'2010-04-01',4)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Nicolas','Cruz','ncruz@distribuidora.com',5500000,'2010-05-01',4)
+------------------------------------------------------------------------------------------------------------------------------------
+--[6]-Insertar 20 registros en la tabla PROYECTO, con diferentes nombres, fechas de inicio y fin (fechas válidas y coherentes), y presupuestos variados.
+------------------------------------------------------------------------------------------------------------------------------------
+--Proyectos Bogota
+---------------------------------
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Chapinero Bogota','2020-01-01','2030-01-01',40000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Usaquen Bogota','2025-01-01','2030-01-01',60000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Teusaquillo Bogota','2024-01-01','2030-01-01',50000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil La Candelaria Bogota','2023-01-01','2030-01-01',40000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Suba Bogota','2022-01-01','2030-01-01',30000000)
+---------------------------------
+--Proyectos Medellin
+---------------------------------
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Poblado Medellin','2010-01-01','2050-01-01',50000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Laureles Medellin','2009-01-01','2050-01-01',40000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Envigado Medellin','2008-01-01','2050-01-01',30000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Belen Medellin','2007-01-01','2050-01-01',20000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Castilla Medellin','2006-01-01','2050-01-01',10000000)
+---------------------------------
+--Proyectos Cali
+---------------------------------
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil SanAntonio Cali','2025-01-01','2025-12-01',1000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Granada Cali','2025-01-01','2025-12-02',2000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Nacional Cali','2025-01-01','2025-12-03',3000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Pampalinda Cali','2025-01-01','2025-12-04',4000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Ciudad Jardin Cali','2025-01-01','2025-12-05',5000000)
+---------------------------------
+--Barranquilla
+---------------------------------
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Alto prado Barranquilla','2018-01-5','2025-12-01',50000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Villa Santos Barranquilla','2018-02-10','2025-12-02',40000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Ciudad Jardin Barranquilla','2018-03-15','2025-12-03',30000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil El Prado Barranquilla','2018-04-20','2025-12-04',20000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Riomar Barranquilla','2018-05-25','2025-12-05',10000000)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
