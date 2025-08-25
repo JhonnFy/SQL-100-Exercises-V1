@@ -162,16 +162,17 @@
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Ciudad Jardin','Terminada',18,18,'2018-03-15','2025-12-03','Barranquilla')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil El Prado','Terminada',19,19,'2018-04-20','2025-12-04','Barranquilla')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Riomar','Terminada',20,20,'2018-05-25','2025-12-05','Barranquilla')
-
-
-
-
-  
-
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Consultas básicas
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --8-Mostrar todos los empleados.
+	--SELECT a.Id_Empleado, a.Nombre, a.Apellido, a.Email, a.Salario, a.Fecha_Contratacion, a.FK_UbicacionId AS Ubicacion 
+	--FROM EMPLEADO a
+------------------------------------------------------------------------------------------------------------------------------------
+   
+
+
+
 --9-Listar nombres y apellidos de empleados con salario mayor a 3000.
 --10-Mostrar todos los registros de la tabla UBICACION.
 --11-Mostrar proyectos con sus presupuestos ordenados de mayor a menor.
