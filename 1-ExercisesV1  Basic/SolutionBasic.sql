@@ -184,7 +184,12 @@
 	--SELECT * FROM TAREAS a
 	--WHERE a.Estado = 'Pendiente'
 ------------------------------------------------------------------------------------------------------------------------------------
---13-Listar tareas asignadas al empleado con Id_Empleado = 1.
+--[13]-Listar tareas asignadas al empleado con Id_Empleado = 1.
+	--SELECT * FROM TAREAS a
+	--WHERE a.FK_EmpleadoId = 1
+------------------------------------------------------------------------------------------------------------------------------------
+
+
 --14-Mostrar empleados ordenados por salario de forma descendente.
 --15-Obtener la cantidad total de tareas registradas.
 --16-Mostrar nombre completo (nombre + apellido) y fecha de contratación de todos los empleados.
