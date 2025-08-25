@@ -1,37 +1,34 @@
 ---------------------------------
 --Ejercicios SQL Básicos (1–20) 
-USE AdminDeveloper
 ---------------------------------
 
----------------------------------
---Relaciones
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --[1]-Crear la relación FK entre EMPLEADO y UBICACION
+------------------------------------------------------------------------------------------------------------------------------------
 	--[ALTER TABLE EMPLEADO
 	--ADD CONSTRAINT Punto1_FkEmpleado_Ubicacion
 	--FOREIGN KEY (FK_UbicacionId)
 	--REFERENCES UBICACION(Id_Ubicacion)
 	--]
-	 
+------------------------------------------------------------------------------------------------------------------------------------
 --[2]-Crear la relación FK entre TAREAS y EMPLEADO.
+------------------------------------------------------------------------------------------------------------------------------------
 	--[ALTER TABLE TAREAS
 	--ADD CONSTRAINT Punto2_FkTareas_Empleados
 	--FOREIGN KEY (FK_EmpleadoId)
 	--REFERENCES EMPLEADO(Id_Empleado)
 	--]
-	 
+------------------------------------------------------------------------------------------------------------------------------------
 --[3]-Crear la relación FK entre TAREAS y PROYECTO.
+------------------------------------------------------------------------------------------------------------------------------------
 	--[ALTER TABLE TAREAS
 	--ADD CONSTRAINT Punto3_FkTareas_Proyectos
 	--FOREIGN KEY (FK_ProyectoId)
 	--REFERENCES PROYECTO(Id_Proyecto)
 	--]
-
----------------------------------
---Inserciones básicas (20 registros por tabla)
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --[4]-Insertar 20 registros en la tabla UBICACION, con diferentes nombres y ubicaciones (por ejemplo, ciudades o sucursales).
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Bogota
 ---------------------------------
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Chapinero','Bogota')
@@ -63,8 +60,46 @@ USE AdminDeveloper
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Ciudad Jardin','Barranquilla')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora El Prado','Barranquilla')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Riomar','Barranquilla')
-
+------------------------------------------------------------------------------------------------------------------------------------
 --[5]-Insertar 20 registros en la tabla EMPLEADO, incluyendo nombre, apellido, email, salario (varios rangos), fecha de contratación y un FK válido a la tabla UBICACION.
+------------------------------------------------------------------------------------------------------------------------------------
+--Contrataciones Bogota 1
+---------------------------------
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,Fk_UbicacionId) VALUES ('Jhon Fredy','Rincon Pelayo','jrinconp@distribuidora.com',12000000,'2025-01-01',1)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Juan','Perez','jperez@distribuidora.com',8000000,'2025-01-02',1)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Maria','Rodriguez','mrodriguez@distribuidora.com',850000,'2025-01-03',1)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Carlos','Gomez','cgomez@distribuidora.com',4000000,'2025-01-04',1)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Ana','Martinez','amartinez@distribuidora.com',7000000,'2025-01-05',1)
+---------------------------------
+--Contrataciones Medellin 2
+---------------------------------
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Luis','Hernandez','lhernandez@distribuidora.com',1000000,'1995-01-01',2)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Laura','Sanchez','lsanchez@distribuidora.com',2000000,'1995-02-01',2)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('David','Ramirez','dramirez@distribuidora.com',3000000,'1995-03-01',2)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Sofia','Torres','storres@distribuidora.com',4000000,'1995-04-01',2)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Andres','Diaz','adiaz@distribuidora.com',5000000,'1995-05-01',2)
+---------------------------------
+--Contrataciones Cali 3
+---------------------------------
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Camila','Florez','cflorez@distribuidora.com',1000000,'2000-01-01',3)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Alejandro','Morales','amorales@distribuidora.com',2000000,'2000-02-01',3)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Valentina','Castro','vcastro@distribuidora.com',3000000,'2000-03-01',3)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Jorge','Vargas','jvargas@distribuidora.com',4000000,'2000-04-01',3)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Daniela','Rojas','drojas@distribuidora.com',5000000,'2000-05-01',3)
+---------------------------------
+--Contrataciones Barranquilla 4
+---------------------------------
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Felipe','Jimenez','fjimenez@distribuidora.com',1100000,'2010-01-01',4)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Isabella','Medina','imedina@distribuidora.com',2200000,'2010-02-01',4)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Ricardo','Silva','rsilva@distribuidora.com',3300000,'2010-03-01',4)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Gabriela','Ortiz','gortiz@distribuidora.com',4400000,'2010-04-01',4)
+--INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Nicolas','Cruz','ncruz@distribuidora.com',5500000,'2010-05-01',4)
+
+
+
+
+
+
 
 --6-Insertar 20 registros en la tabla PROYECTO, con diferentes nombres, fechas de inicio y fin (fechas válidas y coherentes), y presupuestos variados.
 --7-Insertar 20 registros en la tabla TAREAS, cada una con descripción, estado (por ejemplo: 'Pendiente', 'En Progreso', 'Completada'), fechas de inicio y fin, y claves foráneas que referencien empleados y proyectos existentes.
