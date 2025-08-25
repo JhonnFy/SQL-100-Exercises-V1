@@ -165,15 +165,16 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 --Consultas básicas
 ------------------------------------------------------------------------------------------------------------------------------------
---8-Mostrar todos los empleados.
+--[8]-Mostrar todos los empleados.
 	--SELECT a.Id_Empleado, a.Nombre, a.Apellido, a.Email, a.Salario, a.Fecha_Contratacion, a.FK_UbicacionId AS Ubicacion 
 	--FROM EMPLEADO a
 ------------------------------------------------------------------------------------------------------------------------------------
-   
+--9-Listar nombres y apellidos de empleados con salario mayor a 3000.   
+	--SELECT a.Nombre, a.Apellido, a.Salario FROM EMPLEADO a
+	--WHERE Salario > 3000
+------------------------------------------------------------------------------------------------------------------------------------
 
 
-
---9-Listar nombres y apellidos de empleados con salario mayor a 3000.
 --10-Mostrar todos los registros de la tabla UBICACION.
 --11-Mostrar proyectos con sus presupuestos ordenados de mayor a menor.
 --12-Mostrar todas las tareas que estén en estado “Pendiente”.
