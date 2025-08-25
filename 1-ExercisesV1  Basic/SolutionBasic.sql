@@ -188,9 +188,11 @@
 	--SELECT * FROM TAREAS a
 	--WHERE a.FK_EmpleadoId = 1
 ------------------------------------------------------------------------------------------------------------------------------------
+--[14]-Mostrar empleados ordenados por salario de forma descendente.
+	--SELECT a.Id_Empleado, a.Nombre, a.Apellido, a.Email, a.Salario, a.Fecha_Contratacion, a.FK_UbicacionId FROM EMPLEADO a
+	--ORDER BY Salario DESC
+------------------------------------------------------------------------------------------------------------------------------------
 
-
---14-Mostrar empleados ordenados por salario de forma descendente.
 --15-Obtener la cantidad total de tareas registradas.
 --16-Mostrar nombre completo (nombre + apellido) y fecha de contratación de todos los empleados.
 --17-Listar proyectos que iniciaron después del 1 de enero de 2023.
