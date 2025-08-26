@@ -210,4 +210,7 @@
 	--SELECT * FROM TAREAS
 	--WHERE Fecha_Inicio = '2020-01-01'
 ------------------------------------------------------------------------------------------------------------------------------------
---20-Mostrar los empleados junto con el nombre de su ubicación (JOIN entre EMPLEADO y UBICACION).
+--[20]-Mostrar los empleados junto con el nombre de su ubicación (JOIN entre EMPLEADO y UBICACION).
+	--SELECT a.Nombre, a.Apellido, b.Nombre, b.Ubicacion FROM EMPLEADO a
+	--INNER JOIN UBICACION b ON a.FK_UbicacionId = b.Id_Ubicacion
+------------------------------------------------------------------------------------------------------------------------------------
