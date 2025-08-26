@@ -1,17 +1,22 @@
---------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Ejercicios SQL Nivel Intermedio (21–60) 
----------------------------------
-  
+------------------------------------------------------------------------------------------------------------------------------------ 
+
 ------------------------------------------------------------------------------------------------------------------------------------
---[21]-Mostrar el nombre del empleado y la cantidad de tareas asignadas a cada uno.
+--[21]-Listar proyectos con el total del presupuesto utilizado por las tareas asignadas (suponiendo que cada tarea consume un porcentaje del presupuesto).
 ------------------------------------------------------------------------------------------------------------------------------------
-	--SELECT b.Nombre, b.Apellido, a.Descripcion, a.Ciudad_Proyecto,a.Estado,COUNT(a.Id_Tarea) AS TareasAsignadas FROM TAREAS a
-	--INNER JOIN EMPLEADO b ON b.Id_Empleado = a.FK_EmpleadoId
-	--GROUP BY b.Nombre, b.Apellido, a.Descripcion, a.Ciudad_Proyecto, a.Estado
-	--ORDER BY a.Ciudad_Proyecto DESC
+--(Tareas Pendientes 20% Tareas En Progreso 70% Tareas Pendientes 10%)
+--SELECT *,
+--	CASE 
+--	WHEN a.Estado = 'Pendiente' THEN CAST(Presupuesto * 20/100 AS INT) --Formula (Presupuesto*20)/100
+--	WHEN a.Estado = 'En Progreso' THEN CAST(Presupuesto * 70/100 AS INT) --Formula (Presupuesto*70)/100
+--	WHEN a.Estado = 'Terminada' THEN CAST(Presupuesto * 10/100 AS INT) --Formula (Presupuesto*10/100)
+--	END AS PorcentajeActualDePresupuesto
+--FROM TAREAS a
+--INNER JOIN PROYECTO b ON b.Id_Proyecto = a.FK_ProyectoId
+--ORDER BY a.Ciudad_Proyecto DESC, a.Estado DESC
 ------------------------------------------------------------------------------------------------------------------------------------
---22-Listar proyectos con el total del presupuesto utilizado por las tareas asignadas (suponiendo que cada tarea consume un porcentaje del presupuesto).
-------------------------------------------------------------------------------------------------------------------------------------
+--22Mostrar para cada proyecto el empleado que tiene la mayor cantidad de tareas asignadas dentro de ese proyecto, junto con el número de tareas y el porcentaje que representa respecto al total de tareas del proyecto.
 --23-Mostrar empleados que no tienen tareas asignadas.
 --24-Obtener el proyecto con el mayor número de tareas.
 --25-Listar empleados junto con la suma total de salarios de empleados en la misma ubicación.
