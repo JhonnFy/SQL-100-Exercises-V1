@@ -1,10 +1,18 @@
---------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Ejercicios SQL Nivel Intermedio (21–60) 
+<<<<<<< HEAD
 ---------------------------------
+=======
+------------------------------------------------------------------------------------------------------------------------------------ 
+>>>>>>> 2-ExercisesV1_Intermediate
 
 ------------------------------------------------------------------------------------------------------------------------------------
 --[21]-Listar proyectos con el total del presupuesto utilizado por las tareas asignadas (suponiendo que cada tarea consume un porcentaje del presupuesto).
 ------------------------------------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
+=======
+--(Tareas Pendientes 20% Tareas En Progreso 70% Tareas Pendientes 10%)
+>>>>>>> 2-ExercisesV1_Intermediate
 --SELECT *,
 --	CASE 
 --	WHEN a.Estado = 'Pendiente' THEN CAST(Presupuesto * 20/100 AS INT) --Formula (Presupuesto*20)/100
@@ -14,6 +22,7 @@
 --FROM TAREAS a
 --INNER JOIN PROYECTO b ON b.Id_Proyecto = a.FK_ProyectoId
 --ORDER BY a.Ciudad_Proyecto DESC, a.Estado DESC
+<<<<<<< HEAD
 ------------------------------------------------------------------------------------------------------------------------------------
 --[22]-Mostrar el nombre del empleado, la cantidad total de tareas asignadas, y el porcentaje de tareas completadas, en progreso y pendientes. Ordenar por porcentaje de tareas completadas descendente.
 ------------------------------------------------------------------------------------------------------------------------------------
@@ -57,3 +66,45 @@
 --59 Mostrar la cantidad de proyectos por año de inicio, junto con el presupuesto promedio y total por año.
 --60 Listar empleados y sus tareas, mostrando el porcentaje de avance inferido del estado (por ejemplo, Pendiente=0%, En Progreso=50%, Completada=100%).
 --61 Mostrar el detalle completo de empleados, tareas y proyectos, incluyendo el porcentaje de avance de cada tarea y el total presupuestario asignado a cada empleado basado en el porcentaje de sus tareas.
+=======
+------------------------------------------------------------------------------------------------------------------------------------
+--22Mostrar para cada proyecto el empleado que tiene la mayor cantidad de tareas asignadas dentro de ese proyecto, junto con el número de tareas y el porcentaje que representa respecto al total de tareas del proyecto.
+--23-Mostrar empleados que no tienen tareas asignadas.
+--24-Obtener el proyecto con el mayor número de tareas.
+--25-Listar empleados junto con la suma total de salarios de empleados en la misma ubicación.
+--26-Mostrar tareas que tienen fecha de fin posterior a la fecha de fin del proyecto correspondiente (posible error de datos).
+--27-Listar empleados que han sido contratados en los últimos 6 meses.
+--28-Mostrar la cantidad de empleados por ubicación.
+--29-Mostrar los proyectos que están activos (fecha actual entre fecha inicio y fin).
+--30-Listar tareas agrupadas por estado y contar cuántas hay de cada una.
+--31-Obtener el salario promedio de empleados por ubicación.
+--32-Mostrar proyectos cuyo presupuesto es mayor al promedio de todos los proyectos.
+--33-Listar empleados cuyo nombre comienza con ‘A’ o ‘J’.
+--34-Mostrar el nombre del empleado y el nombre del proyecto para todas las tareas con estado 'En Progreso'.
+--35-Listar los proyectos y la cantidad de empleados que trabajan en ellos.
+--36-Obtener el empleado con el salario más alto por cada ubicación.
+--37-Mostrar tareas que no tienen fecha de fin (si la columna permite NULL).
+--38-Listar empleados que trabajan en proyectos que finalizan en menos de un mes.
+--39-Obtener el número de proyectos que comenzaron en un año específico (por ejemplo, 2024).
+--40-Mostrar el detalle de empleados que tienen tareas en más de un proyecto.
+--41-Obtener el salario total pagado a empleados por cada proyecto.
+--42-Mostrar los proyectos y el promedio de duración (días) de sus tareas.
+--43-Listar empleados que tienen tareas con estados diferentes (por ejemplo, un empleado con tareas 'Pendiente' y 'Completada').
+--44-Mostrar proyectos con tareas que aún no han comenzado (fecha_inicio futura).
+--45-Obtener la fecha más temprana y más tardía de contratación de empleados.
+--46-Listar tareas que se solapan (tareas con fechas que se cruzan para el mismo empleado).
+--47-Mostrar empleados que han trabajado en proyectos con presupuesto mayor a 1,000,000.
+--48-Listar tareas ordenadas por proyecto y fecha de inicio.
+--49-Mostrar proyectos donde ninguna tarea está 'Completada'.
+--50-Obtener la duración promedio de las tareas por empleado.
+--51-Mostrar los empleados que no han sido asignados a ninguna tarea.
+--52-Listar los empleados y el número de proyectos distintos en los que trabajan.
+--53-Mostrar las tareas que han durado más de 30 días.
+--54-Obtener el promedio, mínimo y máximo salario de los empleados.
+--55-Listar empleados cuyo correo electrónico contiene un dominio específico (por ejemplo, '@empresa.com').
+--56-Mostrar los proyectos con la mayor diferencia entre fecha de inicio y fin.
+--57-Obtener los empleados que fueron contratados el mismo día que su proyecto comenzó (si aplica).
+--58-Listar tareas y proyectos que comienzan y terminan en el mismo mes y año.
+--59-Mostrar la cantidad de proyectos por año de inicio.
+--60Listar empleados y sus tareas, mostrando el porcentaje de avance (si tuvieras un campo para eso, o inferido del estado).
+>>>>>>> 2-ExercisesV1_Intermediate
