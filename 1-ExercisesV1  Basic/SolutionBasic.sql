@@ -206,6 +206,8 @@
 	--SELECT * FROM EMPLEADO
 	--WHERE Salario BETWEEN 2000000 AND 4000000
 ------------------------------------------------------------------------------------------------------------------------------------
-
---19-Mostrar tareas que comienzan en una fecha específica dada.
+--[19]-Mostrar tareas que comienzan en una fecha específica dada.
+	--SELECT * FROM TAREAS
+	--WHERE Fecha_Inicio = '2020-01-01'
+------------------------------------------------------------------------------------------------------------------------------------
 --20-Mostrar los empleados junto con el nombre de su ubicación (JOIN entre EMPLEADO y UBICACION).
