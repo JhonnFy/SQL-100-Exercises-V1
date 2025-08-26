@@ -8,7 +8,9 @@ git reset --hard a638fc1e2c660229168a9a00228b0565e915f453
 Superar el stage
 git push origin main --force
 
-
-
 Crear una nueva rama:
 Comando Ejecutado git push --set-upstream origin 'NombreDeLaRama'2-ExercisesV1_Intermediate
+
+Fusionar Ramas
+git merge 2-ExercisesV1_Intermediate
+git push
