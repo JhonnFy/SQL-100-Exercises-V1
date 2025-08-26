@@ -198,9 +198,11 @@
 --[16]-Mostrar nombre completo (nombre + apellido) y fecha de contratación de todos los empleados.
 	--SELECT a.Nombre, a.Apellido, a.Fecha_Contratacion FROM EMPLEADO a
 ------------------------------------------------------------------------------------------------------------------------------------
+--[17]-Listar proyectos que iniciaron después del 1 de enero de 2023.
+	--SELECT * FROM PROYECTO
+	--WHERE Fecha_Inicio > '2023-01-01'
+------------------------------------------------------------------------------------------------------------------------------------
 
-
---17-Listar proyectos que iniciaron después del 1 de enero de 2023.
 --18-Mostrar empleados cuyo salario esté entre 2000 y 4000.
 --19-Mostrar tareas que comienzan en una fecha específica dada.
 --20-Mostrar los empleados junto con el nombre de su ubicación (JOIN entre EMPLEADO y UBICACION).
