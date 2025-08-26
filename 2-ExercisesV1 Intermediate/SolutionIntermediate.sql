@@ -3,9 +3,15 @@
 ---------------------------------
   
 ------------------------------------------------------------------------------------------------------------------------------------
---21-Mostrar el nombre del empleado y la cantidad de tareas asignadas a cada uno.
+--[21]-Mostrar el nombre del empleado y la cantidad de tareas asignadas a cada uno.
+------------------------------------------------------------------------------------------------------------------------------------
+	--SELECT b.Nombre, b.Apellido, a.Descripcion, a.Ciudad_Proyecto,a.Estado,COUNT(a.Id_Tarea) AS TareasAsignadas FROM TAREAS a
+	--INNER JOIN EMPLEADO b ON b.Id_Empleado = a.FK_EmpleadoId
+	--GROUP BY b.Nombre, b.Apellido, a.Descripcion, a.Ciudad_Proyecto, a.Estado
+	--ORDER BY a.Ciudad_Proyecto DESC
 ------------------------------------------------------------------------------------------------------------------------------------
 --22-Listar proyectos con el total del presupuesto utilizado por las tareas asignadas (suponiendo que cada tarea consume un porcentaje del presupuesto).
+------------------------------------------------------------------------------------------------------------------------------------
 --23-Mostrar empleados que no tienen tareas asignadas.
 --24-Obtener el proyecto con el mayor número de tareas.
 --25-Listar empleados junto con la suma total de salarios de empleados en la misma ubicación.
