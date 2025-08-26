@@ -202,7 +202,10 @@
 	--SELECT * FROM PROYECTO
 	--WHERE Fecha_Inicio > '2023-01-01'
 ------------------------------------------------------------------------------------------------------------------------------------
+--[18]-Mostrar empleados cuyo salario esté entre 2000 y 4000.
+	--SELECT * FROM EMPLEADO
+	--WHERE Salario BETWEEN 2000000 AND 4000000
+------------------------------------------------------------------------------------------------------------------------------------
 
---18-Mostrar empleados cuyo salario esté entre 2000 y 4000.
 --19-Mostrar tareas que comienzan en una fecha específica dada.
 --20-Mostrar los empleados junto con el nombre de su ubicación (JOIN entre EMPLEADO y UBICACION).
