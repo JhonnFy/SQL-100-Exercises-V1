@@ -61,6 +61,14 @@
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora El Prado','Barranquilla')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Riomar','Barranquilla')
 ------------------------------------------------------------------------------------------------------------------------------------
+--DUAL
+------------------------------------------------------------------------------------------------------------------------------------
+----DBCC CHECKIDENT ('Ubicacion', RESEED, 20)
+--INSERT INTO UBICACION (Nombre, Ubicacion) VALUES ('DISTRIBUIDORA DUAL BM','Bogota Medellin')
+--INSERT INTO UBICACION (Nombre, Ubicacion) VALUES ('DISTRIBUIDORA DUAL BC','Bogota Cali')
+--INSERT INTO UBICACION (Nombre, Ubicacion) VALUES ('DISTRIBUIDORA DUAL BB','Bogota Barranquilla')
+--INSERT INTO UBICACION (Nombre, Ubicacion) VALUES ('DISTRIBUIDORA DUAL MC','Medellin Cali')
+------------------------------------------------------------------------------------------------------------------------------------
 --[5]-Insertar 20 registros en la tabla EMPLEADO, incluyendo nombre, apellido, email, salario (varios rangos), fecha de contratación y un FK válido a la tabla UBICACION.
 ------------------------------------------------------------------------------------------------------------------------------------
 --Contrataciones Bogota 1
