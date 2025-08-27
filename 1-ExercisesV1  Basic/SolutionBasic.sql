@@ -139,35 +139,35 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 --Proyectos [Bogota_Medellin]
 ------------------------------------------------------------------------------------------------------------------------------------
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Proyecto Andino','2025-01-01','2025-12-31',20000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio,Fecha_Fin,Presupuesto) VALUES ('Ruta Del Cafe','2025-01-01','2025-12-31',20000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Nexo Capital Antioquia','2025-01-01','2025-12-31',20000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Puente De La Montana','2025-01-01','2025-12-31',30000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Alianza Del Eje Andino','2025-01-01','2025-12-31',30000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Proyecto Andino','2025-01-01','2025-12-31',20000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio,Fecha_Fin,Presupuesto) VALUES ('Dual Ruta Del Cafe','2025-01-01','2025-12-31',20000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Nexo Capital Antioquia','2025-01-01','2025-12-31',20000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Puente De La Montana','2025-01-01','2025-12-31',30000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Alianza Del Eje Andino','2025-01-01','2025-12-31',30000000)
 ------------------------------------------------------------------------------------------------------------------------------------
 --Proyectos [Bogota_Cali]
 ------------------------------------------------------------------------------------------------------------------------------------
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Proyecto Altiplano -Pacifico','2025-01-01','2025-12-31',10000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Ruta De La Sabana','2025-01-01','2025-12-31',20000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Eje Cultural Del Occidente','2025-01-01','2025-12-31',30000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Conexion Cordillera Central','2025-01-01','2025-12-31',40000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Red Valle Cundinamarca','2025-01-01','2025-12-31',50000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Proyecto Altiplano Pacifico','2025-01-01','2025-12-31',10000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Ruta De La Sabana','2025-01-01','2025-12-31',20000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Eje Cultural Del Occidente','2025-01-01','2025-12-31',30000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Conexion Cordillera Central','2025-01-01','2025-12-31',40000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Red Valle Cundinamarca','2025-01-01','2025-12-31',50000000)
 ------------------------------------------------------------------------------------------------------------------------------------
 --Proyectos [Bogota_Barranquilla]
 ------------------------------------------------------------------------------------------------------------------------------------
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Proyecto Sabana Caribe','2025-01-01','2025-12-31',10000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Ruta Del Magdalena','2025-01-01','2025-12-31',20000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Puente Andino Caribe','2025-01-01','2025-12-31',30000000) 
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Alianza Interior Costa','2025-01-01','2025-12-31',40000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Red Bogota Atlantico','2025-01-01','2025-12-31',50000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Proyecto Sabana Caribe','2025-01-01','2025-12-31',10000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Ruta Del Magdalena','2025-01-01','2025-12-31',20000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Puente Andino Caribe','2025-01-01','2025-12-31',30000000) 
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Alianza Interior Costa','2025-01-01','2025-12-31',40000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Red Bogota Atlantico','2025-01-01','2025-12-31',50000000)
 ------------------------------------------------------------------------------------------------------------------------------------
 --Proyectos [Medellin_Cali]
 ------------------------------------------------------------------------------------------------------------------------------------
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Eje Del Valle Interandino','2025-01-01','2025-12-31',10000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Ruta Del Progreso Andino','2024-01-01','2025-12-31',20000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Conexion Cafetera Pacifico','2023-01-01','2025-12-31',30000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Proyecto Suroccidente Unido','2022-01-01','2025-12-31',40000000)
---INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Red Medellin Cali','2021-01-01','2025-12-31',50000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Eje Del Valle Interandino','2025-01-01','2025-12-31',10000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Ruta Del Progreso Andino','2024-01-01','2025-12-31',20000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Conexion Cafetera Pacifico','2023-01-01','2025-12-31',30000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Proyecto Suroccidente Unido','2022-01-01','2025-12-31',40000000)
+--INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Dual Red Medellin Cali','2021-01-01','2025-12-31',50000000)
 ------------------------------------------------------------------------------------------------------------------------------------
 --[7]-Insertar 20 registros en la tabla TAREAS, cada una con descripción, estado (por ejemplo: 'Pendiente', 'En Progreso', 'Completada'), fechas de inicio y fin, y claves foráneas que referencien empleados y proyectos existentes.
 ------------------------------------------------------------------------------------------------------------------------------------
