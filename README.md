@@ -14,3 +14,7 @@ Comando Ejecutado git push --set-upstream origin 'NombreDeLaRama'2-ExercisesV1_I
 Fusionar Ramas
 git merge 2-ExercisesV1_Intermediate
 git push
+
+Comando para reiniciar los IdDentity:
+DBCC CHECKIDENT ('EMPLEADO', RESEED, 20);
+
