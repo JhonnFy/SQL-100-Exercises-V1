@@ -1,6 +1,6 @@
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Ejercicios SQL Básicos (1–20) 
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
 --[1]-Crear la relación FK entre EMPLEADO y UBICACION
@@ -30,65 +30,73 @@
 --[4]-Insertar 20 registros en la tabla UBICACION, con diferentes nombres y ubicaciones (por ejemplo, ciudades o sucursales).
 ------------------------------------------------------------------------------------------------------------------------------------
 --Bogota
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Chapinero','Bogota')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Usaquen','Bogota')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Teusaquillo','Bogota')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora La Candelaria', 'Bogota')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Suba','Bogota')
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Medellin
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Poblado','Medellin')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Laureles','Medellin')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Envigado','Medellin')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Belen','Medellin')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Castilla','Medellin')
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Cali
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora San Antonio','Cali')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Granada','Cali')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Nacional','Cali')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Pampalinda','Cali')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Ciudad Jardin','Cali')
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Barranquilla
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Alto Prado','Barranquilla')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Villa Santos','Barranquilla')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Ciudad Jardin','Barranquilla')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora El Prado','Barranquilla')
 --INSERT INTO Ubicacion (Nombre, Ubicacion) VALUES ('Distribuidora Riomar','Barranquilla')
 ------------------------------------------------------------------------------------------------------------------------------------
+--DUAL
+------------------------------------------------------------------------------------------------------------------------------------
+----DBCC CHECKIDENT ('Ubicacion', RESEED, 20)
+--INSERT INTO UBICACION (Nombre, Ubicacion) VALUES ('DISTRIBUIDORA DUAL BM','Bogota Medellin')
+--INSERT INTO UBICACION (Nombre, Ubicacion) VALUES ('DISTRIBUIDORA DUAL BC','Bogota Cali')
+--INSERT INTO UBICACION (Nombre, Ubicacion) VALUES ('DISTRIBUIDORA DUAL BB','Bogota Barranquilla')
+--INSERT INTO UBICACION (Nombre, Ubicacion) VALUES ('DISTRIBUIDORA DUAL MC','Medellin Cali')
+------------------------------------------------------------------------------------------------------------------------------------
 --[5]-Insertar 20 registros en la tabla EMPLEADO, incluyendo nombre, apellido, email, salario (varios rangos), fecha de contratación y un FK válido a la tabla UBICACION.
 ------------------------------------------------------------------------------------------------------------------------------------
 --Contrataciones Bogota 1
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,Fk_UbicacionId) VALUES ('Jhon Fredy','Rincon Pelayo','jrinconp@distribuidora.com',12000000,'2025-01-01',1)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Juan','Perez','jperez@distribuidora.com',8000000,'2025-01-02',1)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Maria','Rodriguez','mrodriguez@distribuidora.com',850000,'2025-01-03',1)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Carlos','Gomez','cgomez@distribuidora.com',4000000,'2025-01-04',1)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Ana','Martinez','amartinez@distribuidora.com',7000000,'2025-01-05',1)
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Contrataciones Medellin 2
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Luis','Hernandez','lhernandez@distribuidora.com',1000000,'1995-01-01',2)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Laura','Sanchez','lsanchez@distribuidora.com',2000000,'1995-02-01',2)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('David','Ramirez','dramirez@distribuidora.com',3000000,'1995-03-01',2)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Sofia','Torres','storres@distribuidora.com',4000000,'1995-04-01',2)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Andres','Diaz','adiaz@distribuidora.com',5000000,'1995-05-01',2)
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Contrataciones Cali 3
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Camila','Florez','cflorez@distribuidora.com',1000000,'2000-01-01',3)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Alejandro','Morales','amorales@distribuidora.com',2000000,'2000-02-01',3)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Valentina','Castro','vcastro@distribuidora.com',3000000,'2000-03-01',3)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Jorge','Vargas','jvargas@distribuidora.com',4000000,'2000-04-01',3)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Daniela','Rojas','drojas@distribuidora.com',5000000,'2000-05-01',3)
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Contrataciones Barranquilla 4
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Felipe','Jimenez','fjimenez@distribuidora.com',1100000,'2010-01-01',4)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Isabella','Medina','imedina@distribuidora.com',2200000,'2010-02-01',4)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Ricardo','Silva','rsilva@distribuidora.com',3300000,'2010-03-01',4)
@@ -98,31 +106,31 @@
 --[6]-Insertar 20 registros en la tabla PROYECTO, con diferentes nombres, fechas de inicio y fin (fechas válidas y coherentes), y presupuestos variados.
 ------------------------------------------------------------------------------------------------------------------------------------
 --Proyectos Bogota
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Chapinero Bogota','2020-01-01','2030-01-01',40000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Usaquen Bogota','2025-01-01','2030-01-01',60000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Teusaquillo Bogota','2024-01-01','2030-01-01',50000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil La Candelaria Bogota','2023-01-01','2030-01-01',40000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Suba Bogota','2022-01-01','2030-01-01',30000000)
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Proyectos Medellin
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Poblado Medellin','2010-01-01','2050-01-01',50000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Laureles Medellin','2009-01-01','2050-01-01',40000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Envigado Medellin','2008-01-01','2050-01-01',30000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Belen Medellin','2007-01-01','2050-01-01',20000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Castilla Medellin','2006-01-01','2050-01-01',10000000)
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Proyectos Cali
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil SanAntonio Cali','2025-01-01','2025-12-01',1000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Granada Cali','2025-01-01','2025-12-02',2000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Nacional Cali','2025-01-01','2025-12-03',3000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Pampalinda Cali','2025-01-01','2025-12-04',4000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Ciudad Jardin Cali','2025-01-01','2025-12-05',5000000)
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Proyectos Barranquilla
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Alto prado Barranquilla','2018-01-5','2025-12-01',50000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Villa Santos Barranquilla','2018-02-10','2025-12-02',40000000)
 --INSERT INTO PROYECTO (Nombre, Fecha_Inicio, Fecha_Fin, Presupuesto) VALUES ('Itil Ciudad Jardin Barranquilla','2018-03-15','2025-12-03',30000000)
@@ -132,31 +140,31 @@
 --[7]-Insertar 20 registros en la tabla TAREAS, cada una con descripción, estado (por ejemplo: 'Pendiente', 'En Progreso', 'Completada'), fechas de inicio y fin, y claves foráneas que referencien empleados y proyectos existentes.
 ------------------------------------------------------------------------------------------------------------------------------------
 --Tareas Bogota
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Chapinero','Pendiente',1,1,'2020-01-01','2030-01-01','Bogota')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Usaquen','Pendiente',2,2,'2025-01-01','2030-01-01','Bogota')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Teusaquillo','En Progreso',3,3,'2024-01-01','2030-01-01','Bogota')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil La Candelaria','En Progreso',4,4,'2023-01-01','2030-01-01','Bogota')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Suba','En Progreso',5,5,'2022-01-01','2030-01-01','Bogota')
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Tareas Medellin
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Poblado','Pendiente',6,6,'2010-01-01','2050-01-01','Medellin')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Laureles','Pendiente',7,7,'2009-01-01','2050-01-01','Medellin')
 --INSERT INTO TAREAS (Descripcion,Estado,Fk_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Envigado','En Progreso',8,8,'2008-01-01','2050-01-01','Medellin')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Belen','En Progreso',9,9,'2007-01-01','2050-01-01','Medellin')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Castilla','En Progreso',10,10,'2006-01-01','2050-01-01','Medellin')
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Tareas Cali
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil SanAntonio','Pendiente',11,11,'2025-01-01','2025-12-01','Cali')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Granada','Pendiente',12,12,'2025-01-01','2025-12-02','Cali')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Nacional','En Progreso',13,13,'2025-01-01','2025-12-03','Cali')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Pampalinda','En Progreso',14,14,'2025-01-01','2025-12-01','Cali')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Ciudad Jardin','En Progreso',15,15,'2025-01-01','2025-12-05','Cali')
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --Tareas Barranquilla
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Alto prado','Terminada',16,16,'2018-01-05','2025-12-01','Barranquilla')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Villa Santos','Terminada',17,17,'2018-02-10','2025-12-02','Barranquilla')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Ciudad Jardin','Terminada',18,18,'2018-03-15','2025-12-03','Barranquilla')
