@@ -103,6 +103,17 @@
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Gabriela','Ortiz','gortiz@distribuidora.com',4400000,'2010-04-01',4)
 --INSERT INTO Empleado (Nombre,Apellido,Email,Salario,Fecha_Contratacion,FK_UbicacionId) VALUES ('Nicolas','Cruz','ncruz@distribuidora.com',5500000,'2010-05-01',4)
 ------------------------------------------------------------------------------------------------------------------------------------
+--Contrataciones Dual
+------------------------------------------------------------------------------------------------------------------------------------
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Camila','Morales','cmorales_dualBogotaMedellin@distribuidora.com',5000000,'2020-01-01',21)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Juan','Ruiz','jruiz_dualBogotaMedellin@distribuidora.com',5000000,'2020-01-01',21)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Alberto','Arenas','aarenas_dualBogotaCali@distribuidora.com',5000000,'2020-01-01',22)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Andres','Andrade','aandrade_dualBogotaCali@distribuidora.com',5000000,'2020-01-01',22)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Alicia','Arce','aarce_dualBogotaBarranquilla@distribuidora.com',5000000,'2020-01-01',23)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Adriana','Acevedo','aacevedo_dualBogotaBarranquilla@distribuidora.com',5000000,'2020-01-01',23)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Antonio','Ayala','aayala_dualMedellinCali@distribuidora.com',5000000,'2020-01-01',24)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Axel','Andrade','aandrade_dualMedellinCali@distribuidora.com',5000000,'2020-01-01',24)
+------------------------------------------------------------------------------------------------------------------------------------
 --[6]-Insertar 20 registros en la tabla PROYECTO, con diferentes nombres, fechas de inicio y fin (fechas válidas y coherentes), y presupuestos variados.
 ------------------------------------------------------------------------------------------------------------------------------------
 --Proyectos Bogota
