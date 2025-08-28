@@ -214,6 +214,41 @@
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil El Prado','Terminada',19,19,'2018-04-20','2025-12-04','Barranquilla')
 --INSERT INTO TAREAS (Descripcion,Estado,FK_EmpleadoId,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Itil Riomar','Terminada',20,20,'2018-05-25','2025-12-05','Barranquilla')
 ------------------------------------------------------------------------------------------------------------------------------------
+--Tareas EMPLEADO_TAREA
+------------------------------------------------------------------------------------------------------------------------------------
+--INSERT INTO EMPLEADO_TAREA (Fk_EmpleadoId, FK_TareaId) VALUES (1,1)
+--INSERT INTO EMPLEADO_TAREA (Fk_EmpleadoId, FK_TareaId) VALUES (1,2)
+--INSERT INTO EMPLEADO_TAREA (Fk_EmpleadoId, FK_TareaId) VALUES (1,3)
+--INSERT INTO EMPLEADO_TAREA (Fk_EmpleadoId, FK_TareaId) VALUES (1,4)
+--INSERT INTO EMPLEADO_TAREA (Fk_EmpleadoId, FK_TareaId) VALUES (1,5)
+--INSERT INTO EMPLEADO_TAREA (Fk_EmpleadoId, FK_TareaId) VALUES (1,6)
+------------------------------------------------------------------------------------------------------------------------------------
+--Tareas Duo
+------------------------------------------------------------------------------------------------------------------------------------
+--INSERT INTO TAREAS (Descripcion, Estado, FK_ProyectoId, Fecha_Inicio, Fecha_Fin, Ciudad_Proyecto) VALUES ('Dual Proyecto Andino','Pendiente',21,'2025-01-01','2025-12-31','Bogota Medellin')
+--INSERT INTO TAREAS (Descripcion, Estado, FK_ProyectoId, Fecha_Inicio, Fecha_Fin, Ciudad_Proyecto) VALUES ('Dual Ruta Del Cafe','Pendiente',22,'2025-12-31','2025-12-31','Bogota_Medellin') 
+--INSERT INTO TAREAS (Descripcion, Estado, FK_ProyectoId, Fecha_Inicio, Fecha_Fin, Ciudad_Proyecto) VALUES ('Dual Nexo Capital Antioquia','Pendiente',23,'2025-01-01','2025-12-31','Bogota_Medellin')
+--INSERT INTO TAREAS (Descripcion, Estado, FK_ProyectoId, Fecha_Inicio, Fecha_Fin, Ciudad_Proyecto) VALUES ('Dual Puente De La Montana','Pendiente',24,'2025-01-01','2025-12-31','Bogota_Medellin')
+--INSERT INTO TAREAS (Descripcion, Estado, FK_ProyectoId, Fecha_Inicio, Fecha_Fin, Ciudad_Proyecto) VALUES ('Dual Alianza Del Eje Andino','Pendiente',25,'2025-01-01','2025-12-31','Bogota_Medellin')
+
+--INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Proyecto Altiplano Pacifico','Pendiente',26,'2025-01-01','2025-12-31','Bogota_Cali')
+--INSERT INTO TAREAS (Descripcion,Estado,Fk_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Ruta De La Sabana','Pendiente',27,'2025-01-01','2025-12-31','Bogota_Cali')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Eje Cultural Del Occidente','Pendiente',28,'2025-01-01','2025-12-31','Bogota_Cali')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Conexion Cordillera Central','Pendiente',29,'2025-01-01','2025-12-31','Bogota_Cali')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Red Valle Cundinamarca','Pendiente',30,'2025-01-01','2025-12-31','Bogota_Cali')
+
+--INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Proyecto Sabana Caribe','Pendiente',31,'2025-01-01','2025-12-31','Bogota_Barranquilla')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Ruta Del Magdalena','Pendiente',32,'2025-01-01','2025-12-31','Bogota_Barranquilla')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Puente Andino Caribe','Pendiente',33,'2025-01-01','2025-12-31','Bogota_Barranquilla')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Alianza Interior Costa','Pendiente',34,'2025-01-01','2025-12-31','Bogota_Barranquilla')
+----INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Red Bogota Atlantico','Pendiente',35,'2025-01-01','2025-12-31','Bogota_Barranquilla')
+
+--INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Eje Del Valle Interandino','Pendiente',36,'2025-01-01','2025-12-31','Medellin_Cali')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Ruta Del Progreso Andino','Pendiente',37,'2025-01-01','2025-12-31','Medellin_Cali')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Conexion Cafetera Pacifico','Pendiente',38,'2025-01-01','2025-12-31','Medellin_Cali')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Proyecto Suroccidente Unido','Pendiente',39,'2025-01-01','2025-12-31','Medellin_Cali')
+--INSERT INTO TAREAS (Descripcion,Estado,FK_ProyectoId,Fecha_Inicio,Fecha_Fin,Ciudad_Proyecto) VALUES ('Dual Red Medellin Cali','Pendiente',40,'2025-01-01','2025-12-31','Medellin_Cali')
+------------------------------------------------------------------------------------------------------------------------------------
 --Consultas básicas
 ------------------------------------------------------------------------------------------------------------------------------------
 --[8]-Mostrar todos los empleados.
