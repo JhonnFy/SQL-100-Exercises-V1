@@ -1,6 +1,9 @@
 # SQL-100-Exercises-V1
 SQL[100-Exercises] V1
 
+<img width="1360" height="731" alt="image" src="https://github.com/user-attachments/assets/78d69186-ae5e-4dfb-a137-a0a4bca408de" />
+
+
 
 1-Borar el archivo.
 2-Recuperarlo:
