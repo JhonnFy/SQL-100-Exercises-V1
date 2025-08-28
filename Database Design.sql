@@ -67,3 +67,22 @@
 --ALTER TABLE TAREAS
 --ADD Ciudad_Proyecto VARCHAR(100)
  
+
+---------------------------------
+--Tabla Intermedia Para Que Un Empleado Asuma Varias Responsabilidades
+---------------------------------
+--CREATE TABLE EMPLEADO_TAREA (
+--    Id INT PRIMARY KEY IDENTITY,
+--    FK_EmpleadoId INT NOT NULL,
+--    FK_TareaId INT NOT NULL,
+--    FOREIGN KEY (FK_EmpleadoId) REFERENCES EMPLEADO(Id_Empleado),
+--    FOREIGN KEY (FK_TareaId) REFERENCES TAREAS(Id_Tarea)
+--)
+
+--INSERT INTO EMPLEADO_TAREA (FK_EmpleadoId, FK_TareaId)
+--SELECT FK_EmpleadoId, Id_Tarea
+--FROM TAREAS
+--WHERE FK_EmpleadoId IS NOT NULL
+
+--ALTER TABLE TAREAS
+--DROP COLUMN FK_EmpleadoId;
