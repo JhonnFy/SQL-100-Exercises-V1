@@ -17,6 +17,8 @@
 --INNER JOIN PROYECTO b ON b.Id_Proyecto = a.FK_ProyectoId
 --ORDER BY a.Ciudad_Proyecto DESC, a.Estado DESC
 ------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------
 --[22]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE:
 --Para cada proyecto, la cantidad total de tareas asignadas.
 --Para cada tarea, el empleado asignado y el estado de la tarea.
@@ -25,6 +27,30 @@
 --Pendiente ¥
 --En Progreso »
 --Terminada !
+------------------------------------------------------------------------------------------------------------------------------------
+--SELECT 
+--a.Nombre AS NombreProyecto,	b.Descripcion AS NombreTarea,
+--d.Nombre +' '+ d.Apellido AS EmpleadoAsignado, COUNT(c.FK_TareaId) AS TotalDeTareasAsignadas, 
+--b.Estado, b.ciudad_proyecto,
+--CASE
+--	WHEN b.Estado = 'Pendiente' THEN '¥'
+--	WHEN b.Estado = 'En Progreso' THEN '»'
+--	WHEN b.Estado = 'Terminada' THEN '!'
+--	END AS Iconos,
+--FORMAT(
+--    COUNT(c.FK_TareaId) * 100.0 / 
+--    (
+--      SELECT COUNT(*) 
+--      FROM TAREAS t 
+--      WHERE t.Ciudad_Proyecto = b.Ciudad_Proyecto
+--    ),
+--  'N1') + '%' AS PorcentajeCiudad
+--FROM PROYECTO a
+--INNER JOIN TAREAS b ON b.FK_ProyectoId = a.Id_Proyecto
+--INNER JOIN EMPLEADO_TAREA c ON c.FK_TareaId = b.Id_Tarea
+--INNER JOIN EMPLEADO d ON d.Id_Empleado = c.FK_EmpleadoId
+--GROUP BY a.Nombre, c.FK_TareaId, b.Descripcion, d.Nombre, d.Apellido, b.Estado, b.Ciudad_Proyecto
+--ORDER BY c.FK_TareaId ASC
 ------------------------------------------------------------------------------------------------------------------------------------
 
 
