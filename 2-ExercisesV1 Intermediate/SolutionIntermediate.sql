@@ -3,7 +3,8 @@
 ---------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
---[21]-Listar proyectos con el total del presupuesto utilizado por las tareas asignadas (suponiendo que cada tarea consume un porcentaje del presupuesto).
+--[21]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+--Listar proyectos con el total del presupuesto utilizado por las tareas asignadas (suponiendo que cada tarea consume un porcentaje del presupuesto).
 ------------------------------------------------------------------------------------------------------------------------------------
 --(Tareas Pendientes 20% Tareas En Progreso 70% Tareas Pendientes 10%)
 --SELECT *,
@@ -16,8 +17,19 @@
 --INNER JOIN PROYECTO b ON b.Id_Proyecto = a.FK_ProyectoId
 --ORDER BY a.Ciudad_Proyecto DESC, a.Estado DESC
 ------------------------------------------------------------------------------------------------------------------------------------
---[22]-Mostrar el nombre del empleado, la cantidad total de tareas asignadas, y el porcentaje de tareas completadas, en progreso y pendientes. Ordenar por porcentaje de tareas completadas descendente.
+--[22]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE:
+--Para cada proyecto, la cantidad total de tareas asignadas.
+--Para cada tarea, el empleado asignado y el estado de la tarea.
+--Para cada empleado, la cantidad de tareas asignadas por proyecto y el porcentaje que representan respecto al total de tareas de ese proyecto.
+--Además, que el estado de las tareas se represente con los siguientes íconos:
+--Pendiente ¥
+--En Progreso »
+--Terminada !
 ------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 --23 Listar empleados que no tienen tareas asignadas, mostrando su ubicación y clasificándolos según tiempo de contratación (más o menos de un año).
 --24 Obtener todos los proyectos con la mayor cantidad de tareas asignadas (considerar empates), e incluir el porcentaje de tareas completadas para cada proyecto.
 --25 Para cada empleado, mostrar su salario, la suma total de salarios de todos los empleados en su misma ubicación, y el promedio salarial de esa ubicación
