@@ -5,14 +5,9 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 --[21]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
-<<<<<<< HEAD
---Listar proyectos con el total del presupuesto utilizado por las tareas asignadas
-=======
 --Listar proyectos con el total del presupuesto utilizado por las tareas asignadas (suponiendo que cada tarea consume un porcentaje del presupuesto).
 
->>>>>>> 2-ExercisesV1_Intermediate
 --(Tareas Pendientes 20% Tareas En Progreso 70% Tareas Pendientes 10%)
-
 --SELECT *,
 --	CASE 
 --	WHEN a.Estado = 'Pendiente' THEN CAST(Presupuesto * 20/100 AS INT) --Formula (Presupuesto*20)/100
@@ -64,11 +59,6 @@
 --[23]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
 --Listar empleados que no tienen tareas asignadas, mostrando su ubicación y clasificándolos según tiempo de contratación (más o menos de un año).
-<<<<<<< HEAD
-
-
---24 Obtener todos los proyectos con la mayor cantidad de tareas asignadas (considerar empates), e incluir el porcentaje de tareas completadas para cada proyecto.
-=======
 
 --SELECT 
 --	a.Nombre +' '+ a.Apellido AS Empleado, c.Ubicacion,
@@ -92,7 +82,6 @@
 
 
 
->>>>>>> 2-ExercisesV1_Intermediate
 --25 Para cada empleado, mostrar su salario, la suma total de salarios de todos los empleados en su misma ubicación, y el promedio salarial de esa ubicación
 --26 Listar tareas cuya fecha de fin es posterior a la fecha de fin de su proyecto, indicando por cuánto días se exceden.
 --27 Mostrar empleados contratados en los últimos 6 meses, junto con su antigüedad en días y un indicador que clasifique si son “Recién contratado” (< 3 meses) o “Reciente” (3-6 meses).
