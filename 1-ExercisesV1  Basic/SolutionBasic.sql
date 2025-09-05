@@ -114,6 +114,19 @@
 --INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Antonio','Ayala','aayala_dualMedellinCali@distribuidora.com',5000000,'2020-01-01',24)
 --INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Axel','Andrade','aandrade_dualMedellinCali@distribuidora.com',5000000,'2020-01-01',24)
 ------------------------------------------------------------------------------------------------------------------------------------
+--Empleados Sin Proyecto Asignado
+------------------------------------------------------------------------------------------------------------------------------------
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Ana','Rodriguez','arodriguez@distribuidora.com',1000000,'2025-09-05',1)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Luis','Fernandez','lfernandez@distribuidora.com',1000000,'2025-09-05',1)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Camila','Torres','ctorres@distribuidora.com',1000000,'2025-09-05',1)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Mateo','Ramirez','mramirez@distribuidora.com',1000000,'2025-09-05',1)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Valeria','Gomez','vgomez@distribuidora.com',1000000,'2025-09-05',1)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Diego','Herrera','dherrera@distribuidora.com',1000000,'2025-09-05',1)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Sofia','Martinez','smartinez@distribuidora.com',1000000,'2025-09-05',1)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Juan','Morales','jmorales@distribuidora.com',1000000,'2025-09-05',1)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Isabella','Navarro','inavarro@distribuidora.com',1000000,'2025-09-05',1)
+--INSERT INTO EMPLEADO (Nombre, Apellido, Email, Salario, Fecha_Contratacion, FK_UbicacionId) VALUES ('Andres','Castro','acastro@distribuidora.com',1000000,'2025-09-05',1)
+------------------------------------------------------------------------------------------------------------------------------------
 --[6]-Insertar 20 registros en la tabla PROYECTO, con diferentes nombres, fechas de inicio y fin (fechas válidas y coherentes), y presupuestos variados.
 ------------------------------------------------------------------------------------------------------------------------------------
 --Proyectos Bogota
