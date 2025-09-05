@@ -82,7 +82,7 @@
 --SELECT 
 --	p.Nombre AS Proyecto,
 --	COUNT(et.FK_TareaId) AS TareasAsignadas,
---	SUM(CASE WHEN t.estado = 'Terminada' THEN 1 ELSE 0 END) AS PorcentajeCompletadas
+--	SUM(CASE WHEN t.estado = 'Terminada' THEN 1 ELSE 0 END) AS TareasTerminadas
 --FROM 
 --	PROYECTO p
 --INNER JOIN
@@ -92,10 +92,10 @@
 --GROUP BY p.Nombre
 --)
 --SELECT 
---	Proyecto, TareasAsignadas, PorcentajeCompletadas,
---	ROUND(CAST(PorcentajeCompletadas AS FLOAT) * 100 / NULLIF(TareasAsignadas, 0), 2) AS PorcentajeCompletadas
+--	Proyecto, TareasAsignadas, TareasTerminadas,
+--	ROUND(CAST(TareasTerminadas AS FLOAT) * 100 / NULLIF(TareasAsignadas, 0), 2) AS PorcentajeCompletadas
 --FROM ProyectosTareas
---WHERE TareasAsignadas = (SELECT MAX(TareasAsignadas) FROM ProyectosTareas)
+--WHERE TareasAsignadas = (SELECT MAX(TareasAsignadas) FROM ProyectosTareas) 
 ------------------------------------------------------------------------------------------------------------------------------------
 
 
