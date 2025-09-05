@@ -21,3 +21,10 @@ git push
 Comando para reiniciar los IdDentity:
 DBCC CHECKIDENT ('EMPLEADO', RESEED, 20);
 
+
+-----------
+Igualar una rama con main:
++git checkout 2-ExercisesV1\ Intermediate
++git reset --hard main
++git push --force
+------------
