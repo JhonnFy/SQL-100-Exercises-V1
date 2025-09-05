@@ -78,7 +78,25 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 --Obtener todos los proyectos con la mayor cantidad de tareas asignadas (considerar empates), e incluir el porcentaje de tareas completadas para cada proyecto.
 
-
+--;WITH ProyectosTareas AS(
+--SELECT 
+--	p.Nombre AS Proyecto,
+--	COUNT(et.FK_TareaId) AS TareasAsignadas,
+--	SUM(CASE WHEN t.estado = 'Terminada' THEN 1 ELSE 0 END) AS PorcentajeCompletadas
+--FROM 
+--	PROYECTO p
+--INNER JOIN
+--	TAREAS t ON t.FK_ProyectoId = p.Id_Proyecto
+--INNER JOIN
+--	EMPLEADO_TAREA et ON et.FK_TareaId = t.Id_Tarea
+--GROUP BY p.Nombre
+--)
+--SELECT 
+--	Proyecto, TareasAsignadas, PorcentajeCompletadas,
+--	ROUND(CAST(PorcentajeCompletadas AS FLOAT) * 100 / NULLIF(TareasAsignadas, 0), 2) AS PorcentajeCompletadas
+--FROM ProyectosTareas
+--WHERE TareasAsignadas = (SELECT MAX(TareasAsignadas) FROM ProyectosTareas)
+------------------------------------------------------------------------------------------------------------------------------------
 
 
 
