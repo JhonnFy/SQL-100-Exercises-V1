@@ -4,8 +4,9 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------
 --[21]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
---Listar proyectos con el total del presupuesto utilizado por las tareas asignadas (suponiendo que cada tarea consume un porcentaje del presupuesto).
 ------------------------------------------------------------------------------------------------------------------------------------
+--Listar proyectos con el total del presupuesto utilizado por las tareas asignadas (suponiendo que cada tarea consume un porcentaje del presupuesto).
+
 --(Tareas Pendientes 20% Tareas En Progreso 70% Tareas Pendientes 10%)
 --SELECT *,
 --	CASE 
@@ -19,7 +20,8 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
---[22]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE:
+--[22]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+------------------------------------------------------------------------------------------------------------------------------------
 --Para cada proyecto, la cantidad total de tareas asignadas.
 --Para cada tarea, el empleado asignado y el estado de la tarea.
 --Para cada empleado, la cantidad de tareas asignadas por proyecto y el porcentaje que representan respecto al total de tareas de ese proyecto.
@@ -27,7 +29,7 @@
 --Pendiente ¥
 --En Progreso »
 --Terminada !
-------------------------------------------------------------------------------------------------------------------------------------
+
 --SELECT 
 --a.Nombre AS NombreProyecto,	b.Descripcion AS NombreTarea,
 --d.Nombre +' '+ d.Apellido AS EmpleadoAsignado, COUNT(c.FK_TareaId) AS TotalDeTareasAsignadas, 
@@ -53,11 +55,33 @@
 --ORDER BY c.FK_TareaId ASC
 ------------------------------------------------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------------------------------------------------
+--[23]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+------------------------------------------------------------------------------------------------------------------------------------
+--Listar empleados que no tienen tareas asignadas, mostrando su ubicación y clasificándolos según tiempo de contratación (más o menos de un año).
+
+--SELECT 
+--	a.Nombre +' '+ a.Apellido AS Empleado, c.Ubicacion,
+--CASE 
+--	WHEN a.Fecha_Contratacion < '2025-01-01' THEN 'Contrato Antiguo Sin Tareas Asignadas' ELSE 'Contrato Nuevo Sin Tareas Asignadas'
+--	END AS Clasificacion 
+--FROM 
+--	EMPLEADO a
+--	LEFT JOIN EMPLEADO_TAREA b ON b.FK_EmpleadoId = a.Id_Empleado
+--	INNER JOIN UBICACION c ON c.Id_Ubicacion = a.FK_UbicacionId
+--WHERE 
+--	B.FK_TareaId IS NULL
+------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------
+--[24]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+------------------------------------------------------------------------------------------------------------------------------------
+--Obtener todos los proyectos con la mayor cantidad de tareas asignadas (considerar empates), e incluir el porcentaje de tareas completadas para cada proyecto.
 
 
 
---23 Listar empleados que no tienen tareas asignadas, mostrando su ubicación y clasificándolos según tiempo de contratación (más o menos de un año).
---24 Obtener todos los proyectos con la mayor cantidad de tareas asignadas (considerar empates), e incluir el porcentaje de tareas completadas para cada proyecto.
+
+
 --25 Para cada empleado, mostrar su salario, la suma total de salarios de todos los empleados en su misma ubicación, y el promedio salarial de esa ubicación
 --26 Listar tareas cuya fecha de fin es posterior a la fecha de fin de su proyecto, indicando por cuánto días se exceden.
 --27 Mostrar empleados contratados en los últimos 6 meses, junto con su antigüedad en días y un indicador que clasifique si son “Recién contratado” (< 3 meses) o “Reciente” (3-6 meses).
