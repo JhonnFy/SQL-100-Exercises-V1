@@ -98,10 +98,82 @@
 --WHERE TareasAsignadas = (SELECT MAX(TareasAsignadas) FROM ProyectosTareas)
 ------------------------------------------------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------------------------------------------------
+--[25]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+------------------------------------------------------------------------------------------------------------------------------------
+--Para cada empleado, mostrar su salario, la suma total de salarios de todos los empleados en su misma ubicación.
+
+--WITH SalriosEmpleados AS(
+--	SELECT 
+--		em.Nombre,
+--		em.Apellido,
+--		ub.Ubicacion,
+--		em.salario,
+--		SUM(em.salario) OVER(PARTITION BY ub.Ubicacion) As TotalSalario,
+--		ROW_NUMBER() OVER(PARTITION BY ub.Ubicacion ORDER BY em.Salario ASC) AS RowNumber
+--	FROM EMPLEADO em 
+--	INNER JOIN UBICACION ub ON ub.Id_Ubicacion = em.FK_UbicacionId
+--),
+--Prioridad AS(
+--	SELECT *,
+--		CASE
+--			WHEN Ubicacion = 'Bogota' AND RowNumber = 1 THEN 1
+--			WHEN Ubicacion = 'Medellin' AND RowNumber = 1 THEN 2
+--			WHEN Ubicacion = 'Cali' AND RowNumber = 1 THEN 3
+--			WHEN Ubicacion = 'Barranquilla' AND RowNumber = 1 THEN 4
+--			WHEN Ubicacion = 'Bogota Medellin' AND RowNumber = 1 THEN 5
+--			WHEN Ubicacion = 'Bogota Cali' AND RowNumber = 1 THEN 6
+--			WHEN Ubicacion = 'Bogota Barranquilla' AND RowNumber = 1 THEN 7
+--			WHEN Ubicacion = 'Medellin Cali' AND RowNumber = 1 THEN 8
+--			ELSE 9
+--		END AS OrdenPrioridad	
+--	FROM SalriosEmpleados
+--)
+--SELECT
+--	ROW_NUMBER() OVER(ORDER BY OrdenPrioridad, Ubicacion, RowNumber) AS Posicion,
+--	Nombre +' '+ Apellido AS Empleado,
+--	Ubicacion,
+--	Salario,
+--CASE
+--	WHEN Ubicacion = 'Bogota' AND RowNumber = 1 THEN TotalSalario
+--END AS Nomina_Bogota,
+--CASE
+--	WHEN Ubicacion = 'Medellin' AND RowNumber = 1 THEN TotalSalario
+--END AS Nomina_Medellin,
+--CASE
+--	WHEN Ubicacion = 'Cali' AND RowNumber = 1 THEN TotalSalario
+--END AS Nomina_Cali,
+--CASE
+--	WHEN Ubicacion = 'Barranquilla' AND RowNumber = 1 THEN TotalSalario
+--END AS Nomina_Barranquilla,
+--CASE
+--	WHEN Ubicacion = 'Bogota Medellin' AND RowNumber = 1 THEN TotalSalario
+--END AS Nomina_BogotaMedellin,
+--CASE 
+--	WHEN Ubicacion = 'Bogota Cali' AND RowNumber = 1 THEN TotalSalario
+--END AS Nomina_BogotaCali,
+--CASE
+--	WHEN Ubicacion = 'Bogota Barranquilla' AND RowNumber = 1 THEN TotalSalario
+--END AS Nomina_BogotaBarranquilla,
+--CASE
+--	WHEN Ubicacion = 'Medellin Cali' AND RowNumber = 1 THEN TotalSalario
+--END AS Nomina_MedellinCali
+--FROM Prioridad
+--ORDER BY Posicion;
+------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------
+--[26]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+------------------------------------------------------------------------------------------------------------------------------------
+--26 Listar tareas cuya fecha de fin es posterior a la fecha de fin de su proyecto, indicando por cuanto días se exceden.
 
 
---25 Para cada empleado, mostrar su salario, la suma total de salarios de todos los empleados en su misma ubicación, y el promedio salarial de esa ubicación
---26 Listar tareas cuya fecha de fin es posterior a la fecha de fin de su proyecto, indicando por cuánto días se exceden.
+
+
+
+
+
+
 --27 Mostrar empleados contratados en los últimos 6 meses, junto con su antigüedad en días y un indicador que clasifique si son “Recién contratado” (< 3 meses) o “Reciente” (3-6 meses).
 --28 Mostrar la cantidad de empleados por ubicación, junto con el salario promedio y el salario máximo en cada ubicación.
 --29 Listar proyectos activos cuya fecha actual está entre la fecha de inicio y fin, junto con la cantidad de tareas pendientes y completadas.
