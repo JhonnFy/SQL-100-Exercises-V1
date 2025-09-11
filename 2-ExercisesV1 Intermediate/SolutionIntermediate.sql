@@ -165,16 +165,27 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 --[26]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
---26 Listar tareas cuya fecha de fin es posterior a la fecha de fin de su proyecto, indicando por cuanto días se exceden.
+--26 - Listar todas las tareas con estado 'Terminada' y mostrar la cantidad de días que tomó completarlas, calculados entre la fecha de inicio y la fecha de fin
 
+--SELECT *,
+--	CASE
+--		WHEN Estado = 'Terminada' THEN DATEDIFF(DAY, Fecha_Inicio, Fecha_Fin) 
+--		END AS DiasDelProyecto
+--FROM TAREAS t 
+--WHERE Estado = 'Terminada'
+------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
+------------------------------------------------------------------------------------------------------------------------------------
+--[27]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+------------------------------------------------------------------------------------------------------------------------------------
 --27 Mostrar empleados contratados en los últimos 6 meses, junto con su antigüedad en días y un indicador que clasifique si son “Recién contratado” (< 3 meses) o “Reciente” (3-6 meses).
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 --28 Mostrar la cantidad de empleados por ubicación, junto con el salario promedio y el salario máximo en cada ubicación.
 --29 Listar proyectos activos cuya fecha actual está entre la fecha de inicio y fin, junto con la cantidad de tareas pendientes y completadas.
 --30 Contar tareas agrupadas por estado, y calcular el porcentaje que representan cada estado respecto al total de tareas.
