@@ -165,7 +165,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 --[26]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
---26 - Listar todas las tareas con estado 'Terminada' y mostrar la cantidad de días que tomó completarlas, calculados entre la fecha de inicio y la fecha de fin
+--Listar todas las tareas con estado 'Terminada' y mostrar la cantidad de días que tomó completarlas, calculados entre la fecha de inicio y la fecha de fin
 
 --SELECT *,
 --	CASE
@@ -178,10 +178,15 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 --[27]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
---27 Mostrar empleados contratados en los últimos 6 meses, junto con su antigüedad en días y un indicador que clasifique si son “Recién contratado” (< 3 meses) o “Reciente” (3-6 meses).
+--Mostrar empleados contratados en los últimos 6 meses, junto con su antigüedad en días y un indicador que clasifique si son “Recién contratado” (< 3 meses) o “Reciente” (3-6 meses).
 
-
-
+--SELECT *,
+--	CASE
+--		WHEN DATEDIFF(MONTH, Fecha_Contratacion, GETDATE()) <3 THEN 'Recién contratado'
+--		WHEN DATEDIFF(MONTH, Fecha_Contratacion, GETDATE()) >3 THEN 'Reciente'
+--	END AS Antiguedad
+--FROM EMPLEADO e
+--WHERE Fecha_Contratacion >= DATEADD(MONTH, -6, GETDATE())
 ------------------------------------------------------------------------------------------------------------------------------------
 
 
