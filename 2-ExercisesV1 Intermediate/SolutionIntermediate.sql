@@ -192,11 +192,33 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 --[28]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
---Mostrar la cantidad de empleados por ubicación, junto con el salario promedio y el salario máximo en cada ubicación
+--Listar proyectos activos cuya fecha no sea superior al año 2025, junto con la cantidad de tareas pendientes y completadas.
+
+--;WITH Punto29 AS(
+--	SELECT 
+--		p.Fecha_Inicio, p.Fecha_Fin, p.Nombre, p.Presupuesto,
+--		SUM(CASE WHEN t.Estado = 'En Progreso' THEN 1 ELSE 0 END) AS TareasEnProgreso,
+--		SUM(CASE WHEN t.Estado = 'Pendiente' THEN 1 ELSE 0 END) AS TareasPendientes
+--	FROM PROYECTO p
+--	INNER JOIN TAREAS t ON t.FK_ProyectoId = p.Id_Proyecto
+--	WHERE
+--		t.Estado = 'En Progreso' OR t.Estado = 'Pendiente'
+--	AND t.Fecha_Fin BETWEEN '2025-01-01 00:00:00.000' AND '2025-12-31 00:00:00.997'
+--	--AND t.Fecha_Fin <= '2025-12-31 00:00:00.000' (Opcional)
+--	GROUP BY
+--		p.Fecha_Inicio, p.Fecha_Fin, p.Nombre, p.Presupuesto
+--)
+
+--SELECT * FROM Punto29
+--ORDER BY TareasPendientes
 ------------------------------------------------------------------------------------------------------------------------------------
 
 
---29 Listar proyectos activos cuya fecha actual está entre la fecha de inicio y fin, junto con la cantidad de tareas pendientes y completadas.
+
+--29 Mostrar la cantidad de empleados por ubicación, junto con el salario promedio y el salario máximo en cada ubicación
+
+
+
 --30 Contar tareas agrupadas por estado, y calcular el porcentaje que representan cada estado respecto al total de tareas.
 --31 Obtener el salario promedio, mínimo y máximo por ubicación, y mostrar para cada ubicación la diferencia entre el salario máximo y el mínimo.
 --32 Listar proyectos cuyo presupuesto es mayor al promedio general, mostrando cuánto porcentaje por encima del promedio están.
