@@ -189,9 +189,13 @@
 --WHERE Fecha_Contratacion >= DATEADD(MONTH, -6, GETDATE())
 ------------------------------------------------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------------------------------------------------
+--[28]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+------------------------------------------------------------------------------------------------------------------------------------
+--Mostrar la cantidad de empleados por ubicación, junto con el salario promedio y el salario máximo en cada ubicación
+------------------------------------------------------------------------------------------------------------------------------------
 
 
---28 Mostrar la cantidad de empleados por ubicación, junto con el salario promedio y el salario máximo en cada ubicación.
 --29 Listar proyectos activos cuya fecha actual está entre la fecha de inicio y fin, junto con la cantidad de tareas pendientes y completadas.
 --30 Contar tareas agrupadas por estado, y calcular el porcentaje que representan cada estado respecto al total de tareas.
 --31 Obtener el salario promedio, mínimo y máximo por ubicación, y mostrar para cada ubicación la diferencia entre el salario máximo y el mínimo.
