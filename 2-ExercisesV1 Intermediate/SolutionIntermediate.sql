@@ -213,9 +213,36 @@
 --ORDER BY TareasPendientes
 ------------------------------------------------------------------------------------------------------------------------------------
 
-
-
---29 Mostrar la cantidad de empleados por ubicación, junto con el salario promedio y el salario máximo en cada ubicación
+------------------------------------------------------------------------------------------------------------------------------------
+--[29]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+------------------------------------------------------------------------------------------------------------------------------------
+--Mostrar la cantidad de empleados por ubicación, junto con el salario promedio y el salario máximo en cada ubicación
+--;WITH EmpleadosUbicacion AS(
+--	SELECT  
+--		t.Ciudad_Proyecto,
+--		MAX(e.Salario) AS SalarioMaximoNum
+--	FROM TAREAS t
+--	INNER JOIN EMPLEADO_TAREA et ON et.FK_TareaId = t.Id_Tarea
+--	INNER JOIN EMPLEADO e ON e.Id_Empleado = et.FK_EmpleadoId
+--	GROUP BY t.Ciudad_Proyecto
+--),
+--PromedioSalarios AS(
+--	SELECT 
+--		AVG(SalarioMaximoNum) AS PromedioMaximo
+--	FROM EmpleadosUbicacion
+--)
+--SELECT 
+--	e.Nombre, e.Apellido,
+--	t.Descripcion, t.Estado, t.Ciudad_Proyecto,
+--	CONCAT(eu.Ciudad_Proyecto,' ', eu.SalarioMaximoNum) AS SalarioMaximo,
+--	ps.PromedioMaximo
+--FROM TAREAS t
+--	INNER JOIN EMPLEADO_TAREA et ON et.FK_TareaId = t.Id_Tarea
+--	INNER JOIN EMPLEADO e ON e.Id_Empleado = et.FK_EmpleadoId
+--	INNER JOIN EmpleadosUbicacion eu ON eu.Ciudad_Proyecto = t.Ciudad_Proyecto
+--	CROSS JOIN PromedioSalarios ps
+--ORDER BY t.Ciudad_Proyecto ASC;
+------------------------------------------------------------------------------------------------------------------------------------
 
 
 
