@@ -3,7 +3,7 @@
 ---------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
---[21]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+--[21] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
 --Listar proyectos con el total del presupuesto utilizado por las tareas asignadas (suponiendo que cada tarea consume un porcentaje del presupuesto).
 
@@ -20,7 +20,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
---[22]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+--[22] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
 --Para cada proyecto, la cantidad total de tareas asignadas.
 --Para cada tarea, el empleado asignado y el estado de la tarea.
@@ -56,7 +56,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
---[23]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+--[23] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
 --Listar empleados que no tienen tareas asignadas, mostrando su ubicación y clasificándolos según tiempo de contratación (más o menos de un año).
 
@@ -74,7 +74,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
---[24]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+--[24] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
 --Obtener todos los proyectos con la mayor cantidad de tareas asignadas (considerar empates), e incluir el porcentaje de tareas completadas para cada proyecto.
 
@@ -99,7 +99,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
---[25]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+--[25] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
 --Para cada empleado, mostrar su salario, la suma total de salarios de todos los empleados en su misma ubicación.
 
@@ -163,7 +163,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
---[26]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+--[26] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
 --Listar todas las tareas con estado 'Terminada' y mostrar la cantidad de días que tomó completarlas, calculados entre la fecha de inicio y la fecha de fin
 
@@ -176,7 +176,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
---[27]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+--[27] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
 --Mostrar empleados contratados en los últimos 6 meses, junto con su antigüedad en días y un indicador que clasifique si son “Recién contratado” (< 3 meses) o “Reciente” (3-6 meses).
 
@@ -190,7 +190,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
---[28]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+--[28] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
 --Listar proyectos activos cuya fecha no sea superior al año 2025, junto con la cantidad de tareas pendientes y completadas.
 
@@ -214,7 +214,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
---[29]-ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+--[29] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 ------------------------------------------------------------------------------------------------------------------------------------
 --Mostrar la cantidad de empleados por ubicación, junto con el salario promedio y el salario máximo en cada ubicación
 --;WITH EmpleadosUbicacion AS(
@@ -244,9 +244,29 @@
 --ORDER BY t.Ciudad_Proyecto ASC;
 ------------------------------------------------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------------------------------------------------
+--[30] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+------------------------------------------------------------------------------------------------------------------------------------
+-- Contar tareas agrupadas por estado, y calcular el porcentaje que representan cada estado respecto al total de tareas.
+--;WITH Estados AS(
+--	SELECT 
+--		t.Estado,
+--		COUNT(*) AS TotalTatreasEstado
+--	FROM TAREAS t
+--	GROUP BY Estado
+--),
+--Porcentajes AS(
+--	SELECT 
+--	e.Estado,
+--	TotalTatreasEstado * 100.0 / (SELECT SUM(TotalTatreasEstado) FROM Estados) AS Porcentaje
+--FROM Estados e
+--)
+--SELECT
+--	p.Estado, p.Porcentaje
+--FROM Porcentajes p
+------------------------------------------------------------------------------------------------------------------------------------
 
-
---30 Contar tareas agrupadas por estado, y calcular el porcentaje que representan cada estado respecto al total de tareas.
+-------------------------------------------------------------------------------------------------------------------------
 --31 Obtener el salario promedio, mínimo y máximo por ubicación, y mostrar para cada ubicación la diferencia entre el salario máximo y el mínimo.
 --32 Listar proyectos cuyo presupuesto es mayor al promedio general, mostrando cuánto porcentaje por encima del promedio están.
 --33 Listar empleados cuyo nombre comienza con 'A' o 'J', indicando si además su salario está por encima o por debajo del salario promedio general.
