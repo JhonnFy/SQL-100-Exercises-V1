@@ -280,10 +280,18 @@
 --		FROM EMPLEADO e
 --	INNER JOIN UBICACION u ON u.Id_Ubicacion = e.FK_UbicacionId
 --	GROUP BY u.Ubicacion
+--),
+--Diferencia AS(
+--	SELECT 
+--		s.SalarioMinimoUbicacion,s.Minimo, s.Maximo, s.Promedio,
+--		(s.Maximo - s.Minimo) AS Diferencia,
+--	CASE
+--		WHEN (s.Maximo - s.Minimo = 0) THEN 'Valores Maximo/Minimo 0'
+--	END AS Datos
+--	FROM SalarioMinimo s
 --)
 
---SELECT * FROM SalarioMinimo
-
+--SELECT * FROM Diferencia
 
 
 -------------------------------------------------------------------------------------------------------------------------
