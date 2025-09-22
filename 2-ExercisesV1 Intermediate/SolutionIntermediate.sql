@@ -273,7 +273,7 @@
 
 --;WITH SalarioMinimo AS(
 --	SELECT
---		'[Salrios] ' + ISNULL(u.Ubicacion,'') AS SalarioMinimoUbicacion,
+--		'[Salarios] ' + ISNULL(u.Ubicacion,'') AS SalarioMinimoUbicacion,
 --		MIN(e.Salario) AS Minimo,
 --		MAX(e.Salario) AS Maximo,
 --		AVG(e.Salario) AS Promedio
