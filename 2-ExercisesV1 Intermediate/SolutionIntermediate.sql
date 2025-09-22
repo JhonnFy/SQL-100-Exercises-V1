@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 --Ejercicios SQL Nivel Intermedio (21–60) 
----------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
 --[21] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
@@ -267,7 +267,29 @@
 ------------------------------------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------------------------
---31 Obtener el salario promedio, mínimo y máximo por ubicación, y mostrar para cada ubicación la diferencia entre el salario máximo y el mínimo.
+--[31] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+-------------------------------------------------------------------------------------------------------------------------
+--Obtener el salario promedio, mínimo y máximo por ubicación, y mostrar para cada ubicación la diferencia entre el salario máximo y el mínimo.
+
+--;WITH SalarioMinimo AS(
+--	SELECT
+--		'[Salrios] ' + ISNULL(u.Ubicacion,'') AS SalarioMinimoUbicacion,
+--		MIN(e.Salario) AS Minimo,
+--		MAX(e.Salario) AS Maximo,
+--		AVG(e.Salario) AS Promedio
+--		FROM EMPLEADO e
+--	INNER JOIN UBICACION u ON u.Id_Ubicacion = e.FK_UbicacionId
+--	GROUP BY u.Ubicacion
+--)
+
+--SELECT * FROM SalarioMinimo
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
 --32 Listar proyectos cuyo presupuesto es mayor al promedio general, mostrando cuánto porcentaje por encima del promedio están.
 --33 Listar empleados cuyo nombre comienza con 'A' o 'J', indicando si además su salario está por encima o por debajo del salario promedio general.
 --34 Mostrar el nombre del empleado y del proyecto para todas las tareas con estado 'En Progreso', junto con la duración actual de la tarea (días desde inicio hasta hoy).
