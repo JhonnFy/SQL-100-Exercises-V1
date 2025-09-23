@@ -292,13 +292,29 @@
 --)
 
 --SELECT * FROM Diferencia
+-------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------
+--[32] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+-------------------------------------------------------------------------------------------------------------------------
+--Listar proyectos cuyo presupuesto es mayor al promedio general, mostrando cuánto porcentaje por encima del promedio están.
+--SELECT 
+--	t.Ciudad_Proyecto,
+--	AVG(p.Presupuesto) AS PromedioCiudad,
+--	MAX(p.Presupuesto) AS MaximoCiudad
+--FROM PROYECTO p
+--INNER JOIN TAREAS t ON t.FK_ProyectoId = p.Id_Proyecto
+--GROUP BY t.Ciudad_Proyecto
+--HAVING AVG(p.Presupuesto) > (SELECT AVG(Presupuesto) FROM PROYECTO)
 
 
 -------------------------------------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------
---32 Listar proyectos cuyo presupuesto es mayor al promedio general, mostrando cuánto porcentaje por encima del promedio están.
+
+
+
+
+
 --33 Listar empleados cuyo nombre comienza con 'A' o 'J', indicando si además su salario está por encima o por debajo del salario promedio general.
 --34 Mostrar el nombre del empleado y del proyecto para todas las tareas con estado 'En Progreso', junto con la duración actual de la tarea (días desde inicio hasta hoy).
 --35 Listar proyectos con la cantidad de empleados distintos que trabajan en ellos, y el porcentaje que representan respecto al total de empleados.
