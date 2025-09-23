@@ -298,16 +298,22 @@
 --[32] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 -------------------------------------------------------------------------------------------------------------------------
 --Listar proyectos cuyo presupuesto es mayor al promedio general, mostrando cuánto porcentaje por encima del promedio están.
+
+--DECLARE	@PromedioGeneral DECIMAL(10,2);
+--DECLARE @MaximoCiudad DECIMAL(10,2); 
+
+--SET @PromedioGeneral = (SELECT AVG(p.Presupuesto) FROM PROYECTO p)
+--SET @MaximoCiudad = (SELECT MAX(p.Presupuesto) FROM PROYECTO p)
+
 --SELECT 
 --	t.Ciudad_Proyecto,
---	AVG(p.Presupuesto) AS PromedioCiudad,
---	MAX(p.Presupuesto) AS MaximoCiudad
+--	@PromedioGeneral AS PromedioGeneral,
+--	@MaximoCiudad AS PromedioMaximo,
+--	((AVG(p.Presupuesto) - @PromedioGeneral) / @PromedioGeneral) * 100 AS PorcentajeSobrePromedio
 --FROM PROYECTO p
 --INNER JOIN TAREAS t ON t.FK_ProyectoId = p.Id_Proyecto
 --GROUP BY t.Ciudad_Proyecto
---HAVING AVG(p.Presupuesto) > (SELECT AVG(Presupuesto) FROM PROYECTO)
-
-
+--HAVING AVG(p.Presupuesto) > (SELECT AVG(Presupuesto) FROM PROYECTO) --Ciudades que superan el promedio General
 -------------------------------------------------------------------------------------------------------------------------
 
 
