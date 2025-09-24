@@ -29,13 +29,11 @@ Igualar una rama con main:
 +git push --force
 ------------
 
+## Funciones de agregación
+    - `COUNT() →` Cuenta filas o valores no nulos.
+    - `SUM() →` Suma valores numéricos.
+    - `AVG() →` Calcula el promedio de valores numéricos.
+    - `MIN() →` Devuelve el valor mínimo.
+    - `MAX() →` Devuelve el valor máximo.
+    
 
-
-
-
-####Funciones de agregación
-COUNT() → Cuenta filas o valores no nulos.
-SUM() → Suma valores numéricos.
-AVG() → Calcula el promedio de valores numéricos.
-MIN() → Devuelve el valor mínimo.
-MAX() → Devuelve el valor máximo.
