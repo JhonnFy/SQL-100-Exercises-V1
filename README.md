@@ -29,19 +29,20 @@ Igualar una rama con main:
 +git push --force
 ------------
 
-##FUNCIONES DE AGREGACIÓN
-    - COUNT() → Cuenta filas o valores no nulos.
-    - SUM() → Suma valores numéricos.
-    - AVG() → Calcula el promedio de valores numéricos.
-    - MIN() → Devuelve el valor mínimo.
-    - MAX() → Devuelve el valor máximo.
-    
-##FUNCIONES DE FECHA
-    -SELECT GETDATE() → Fecha y hora actuales (SQL Server)
-    -SELECT CURRENT_DATE → Fecha actual (MySQL/PostgreSQL)
-    -SELECT CURRENT_TIMESTAMP → Fecha y hora actuales
-    -SELECT DATEADD(day,7,fecha) → Sumar 7 días
-    -SELECT DATEDIFF(day,fecha1,fecha2) → Diferencia en días
-    -SELECT YEAR(fecha) → Año
-    -SELECT MONTH(fecha) → Mes
-    -SELECT DAY(fecha) → Día
+## FUNCIONES DE AGREGACIÓN
+- `COUNT()` → Cuenta filas o valores no nulos.
+- `SUM()` → Suma valores numéricos.
+- `AVG()` → Calcula el promedio de valores numéricos.
+- `MIN()` → Devuelve el valor mínimo.
+- `MAX()` → Devuelve el valor máximo.
+
+## FUNCIONES DE FECHA / HORA
+- `GETDATE()` → Devuelve la fecha y hora actuales (SQL Server).
+- `CURRENT_DATE` → Devuelve la fecha actual (MySQL/PostgreSQL).
+- `CURRENT_TIMESTAMP` → Devuelve la fecha y hora actuales.
+- `DATEADD(day, 7, fecha)` → Suma 7 días a una fecha.
+- `DATEDIFF(day, fecha1, fecha2)` → Calcula la diferencia en días entre dos fechas.
+- `YEAR(fecha)` → Extrae el año de una fecha.
+- `MONTH(fecha)` → Extrae el mes de una fecha.
+- `DAY(fecha)` → Extrae el día de una fecha.
+
