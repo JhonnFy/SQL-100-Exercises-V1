@@ -37,11 +37,11 @@ Igualar una rama con main:
     - MAX() → Devuelve el valor máximo.
     
 ##FUNCIONES DE FECHA
-    -SELECT GETDATE()      -- Fecha y hora actuales (SQL Server)
-    -SELECT CURRENT_DATE   -- Fecha actual (MySQL/PostgreSQL)
-    -SELECT CURRENT_TIMESTAMP -- Fecha y hora actuales
-    -SELECT DATEADD(day,7,fecha) -- Sumar 7 días
-    -SELECT DATEDIFF(day,fecha1,fecha2) -- Diferencia en días
-    -SELECT YEAR(fecha)    -- Año
-    -SELECT MONTH(fecha)   -- Mes
-    -SELECT DAY(fecha)     -- Día
+    -SELECT GETDATE() → Fecha y hora actuales (SQL Server)
+    -SELECT CURRENT_DATE → Fecha actual (MySQL/PostgreSQL)
+    -SELECT CURRENT_TIMESTAMP → Fecha y hora actuales
+    -SELECT DATEADD(day,7,fecha) → Sumar 7 días
+    -SELECT DATEDIFF(day,fecha1,fecha2) → Diferencia en días
+    -SELECT YEAR(fecha) → Año
+    -SELECT MONTH(fecha) → Mes
+    -SELECT DAY(fecha) → Día
