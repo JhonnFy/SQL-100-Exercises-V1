@@ -36,7 +36,7 @@ Igualar una rama con main:
     - MIN() → Devuelve el valor mínimo.
     - MAX() → Devuelve el valor máximo.
     
-## FUNCIONES DE FECHA
+##FUNCIONES DE FECHA
     -SELECT GETDATE()      -- Fecha y hora actuales (SQL Server)
     -SELECT CURRENT_DATE   -- Fecha actual (MySQL/PostgreSQL)
     -SELECT CURRENT_TIMESTAMP -- Fecha y hora actuales
