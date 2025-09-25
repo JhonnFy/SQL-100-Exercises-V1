@@ -1,8 +1,22 @@
 # SQL-100-Exercises-V1
-SQL[100-Exercises] V1
-
 <img width="1360" height="731" alt="image" src="https://github.com/user-attachments/assets/78d69186-ae5e-4dfb-a137-a0a4bca408de" />
 
+## FUNCIONES DE AGREGACIÓN
+- `COUNT()` → Cuenta filas o valores no nulos.
+- `SUM()` → Suma valores numéricos.
+- `AVG()` → Calcula el promedio de valores numéricos.
+- `MIN()` → Devuelve el valor mínimo.
+- `MAX()` → Devuelve el valor máximo.
+
+## FUNCIONES DE FECHA / HORA
+- `GETDATE()` → Devuelve la fecha y hora actuales (SQL Server).
+- `CURRENT_DATE` → Devuelve la fecha actual (MySQL/PostgreSQL).
+- `CURRENT_TIMESTAMP` → Devuelve la fecha y hora actuales.
+- `DATEADD(day, 7, fecha)` → Suma 7 días a una fecha.
+- `DATEDIFF(day, fecha1, fecha2)` → Calcula la diferencia en días entre dos fechas.
+- `YEAR(fecha)` → Extrae el año de una fecha.
+- `MONTH(fecha)` → Extrae el mes de una fecha.
+- `DAY(fecha)` → Extrae el día de una fecha.
 
 
 1-Borar el archivo.
@@ -28,3 +42,6 @@ Igualar una rama con main:
 +git reset --hard main
 +git push --force
 ------------
+
+
+
