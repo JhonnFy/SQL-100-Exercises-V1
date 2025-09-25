@@ -316,12 +316,34 @@
 --HAVING AVG(p.Presupuesto) > (SELECT AVG(Presupuesto) FROM PROYECTO) --Ciudades que superan el promedio General
 -------------------------------------------------------------------------------------------------------------------------
 
+-------------------------------------------------------------------------------------------------------------------------
+--[33] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
+-------------------------------------------------------------------------------------------------------------------------
+--Listar empleados cuyo nombre comienza con 'A' o 'J', indicando si además su salario está por encima o por debajo del salario promedio general.
+
+--SELECT
+--	e.Nombre,
+--	LEFT(e.Nombre,1) AS Prefijos
+--FROM EMPLEADO e
+--WHERE LEFT(e.Nombre,1) = 'A' OR LEFT(e.Nombre,1) = 'J'
+--ORDER BY e.Nombre
+
+-------------------------------------------------------------------------------------------------------------------------
 
 
 
 
 
---33 Listar empleados cuyo nombre comienza con 'A' o 'J', indicando si además su salario está por encima o por debajo del salario promedio general.
+
+
+
+
+
+
+
+
+
+
 --34 Mostrar el nombre del empleado y del proyecto para todas las tareas con estado 'En Progreso', junto con la duración actual de la tarea (días desde inicio hasta hoy).
 --35 Listar proyectos con la cantidad de empleados distintos que trabajan en ellos, y el porcentaje que representan respecto al total de empleados.
 --36 Obtener el empleado con el salario más alto por cada ubicación, mostrando también el promedio salarial de esa ubicación y la diferencia entre el máximo y promedio.
