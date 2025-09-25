@@ -319,15 +319,20 @@
 -------------------------------------------------------------------------------------------------------------------------
 --[33] ESCRIBE UNA CONSULTA SQL QUE MUESTRE
 -------------------------------------------------------------------------------------------------------------------------
---Listar empleados cuyo nombre comienza con 'A' o 'J', indicando si además su salario está por encima o por debajo del salario promedio general.
+--Listar empleados cuyo nombre comienza con 'A' o 'J', 
+--indicando si además su salario está por encima o por debajo del salario promedio general: '1000.000'.
 
 --SELECT
---	e.Nombre,
---	LEFT(e.Nombre,1) AS Prefijos
+--	LEFT(e.Nombre,1) AS Prefijos,
+--	e.Nombre, 
+--	CONCAT('$ ', e.Salario) AS SalarioActual,
+--CASE
+--	WHEN e.Salario > 1000000 THEN 'Superior Al Salario'
+--		ELSE 'Inferior Al Salario'
+--END AS PromedioGeneral
 --FROM EMPLEADO e
---WHERE LEFT(e.Nombre,1) = 'A' OR LEFT(e.Nombre,1) = 'J'
+--WHERE LEFT(e.Nombre,1) IN ('A', 'J')
 --ORDER BY e.Nombre
-
 -------------------------------------------------------------------------------------------------------------------------
 
 
